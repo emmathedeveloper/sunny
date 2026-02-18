@@ -35,6 +35,7 @@ const MainView = () => {
         winUrl: '/assets/music/win2.m4a',
         loseUrl: '/assets/music/loose.m4a',
         fadeInDuration: 2,
+        bgVolume: .2
     })
 
     const { isLoadingAvatar, setCurrentAnimation, setIsAnimationPaused } = useAvatarContext()
@@ -594,8 +595,7 @@ const MainView = () => {
 
                 {/* Bottom Reset Button */}
                 <div className='flex flex-col gap-2'>
-                    {
-                        currentFlowState == 'game' &&
+
                         <button
                             className="w-11 h-11 rounded-lg bg-black/20 flex items-center justify-center hover:bg-black/30 transition-colors text-white"
                             title="Reset conversation"
@@ -605,7 +605,6 @@ const MainView = () => {
                         >
                             {conversationPaused ? <PlayIcon /> : <PauseIcon />}
                         </button>
-                    }
 
                     <button
                         onClick={resetActivity}
