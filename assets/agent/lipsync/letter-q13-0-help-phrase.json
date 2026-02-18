@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q13-0-help-phrase.ogg",
+    "duration": 1.90
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.14, "value": "B" },
+    { "start": 0.14, "end": 0.21, "value": "C" },
+    { "start": 0.21, "end": 0.28, "value": "B" },
+    { "start": 0.28, "end": 0.70, "value": "C" },
+    { "start": 0.70, "end": 0.93, "value": "X" },
+    { "start": 0.93, "end": 1.01, "value": "B" },
+    { "start": 1.01, "end": 1.13, "value": "A" },
+    { "start": 1.13, "end": 1.21, "value": "B" },
+    { "start": 1.21, "end": 1.42, "value": "C" },
+    { "start": 1.42, "end": 1.65, "value": "A" },
+    { "start": 1.65, "end": 1.90, "value": "X" }
+  ]
+}

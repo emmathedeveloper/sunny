@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q26-0-help-phrase.ogg",
+    "duration": 1.43
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.02, "value": "X" },
+    { "start": 0.02, "end": 0.27, "value": "B" },
+    { "start": 0.27, "end": 0.46, "value": "C" },
+    { "start": 0.46, "end": 0.51, "value": "E" },
+    { "start": 0.51, "end": 0.69, "value": "F" },
+    { "start": 0.69, "end": 0.76, "value": "B" },
+    { "start": 0.76, "end": 0.83, "value": "C" },
+    { "start": 0.83, "end": 1.18, "value": "B" },
+    { "start": 1.18, "end": 1.43, "value": "X" }
+  ]
+}

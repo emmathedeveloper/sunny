@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/general-play-more.ogg",
+    "duration": 3.66
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.06, "value": "X" },
+    { "start": 0.06, "end": 0.13, "value": "F" },
+    { "start": 0.13, "end": 0.20, "value": "C" },
+    { "start": 0.20, "end": 0.41, "value": "B" },
+    { "start": 0.41, "end": 0.48, "value": "F" },
+    { "start": 0.48, "end": 0.76, "value": "B" },
+    { "start": 0.76, "end": 0.84, "value": "A" },
+    { "start": 0.84, "end": 0.94, "value": "C" },
+    { "start": 0.94, "end": 1.29, "value": "B" },
+    { "start": 1.29, "end": 1.52, "value": "X" },
+    { "start": 1.52, "end": 2.02, "value": "B" },
+    { "start": 2.02, "end": 2.09, "value": "D" },
+    { "start": 2.09, "end": 2.19, "value": "A" },
+    { "start": 2.19, "end": 2.57, "value": "F" },
+    { "start": 2.57, "end": 2.64, "value": "E" },
+    { "start": 2.64, "end": 2.71, "value": "F" },
+    { "start": 2.71, "end": 2.79, "value": "A" },
+    { "start": 2.79, "end": 2.91, "value": "H" },
+    { "start": 2.91, "end": 2.98, "value": "C" },
+    { "start": 2.98, "end": 3.07, "value": "A" },
+    { "start": 3.07, "end": 3.34, "value": "E" },
+    { "start": 3.34, "end": 3.66, "value": "X" }
+  ]
+}

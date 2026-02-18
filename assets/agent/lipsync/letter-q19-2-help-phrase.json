@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q19-2-help-phrase.ogg",
+    "duration": 1.43
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.02, "value": "X" },
+    { "start": 0.02, "end": 0.13, "value": "B" },
+    { "start": 0.13, "end": 0.21, "value": "A" },
+    { "start": 0.21, "end": 0.33, "value": "F" },
+    { "start": 0.33, "end": 0.61, "value": "B" },
+    { "start": 0.61, "end": 0.69, "value": "A" },
+    { "start": 0.69, "end": 0.94, "value": "C" },
+    { "start": 0.94, "end": 1.15, "value": "B" },
+    { "start": 1.15, "end": 1.43, "value": "X" }
+  ]
+}

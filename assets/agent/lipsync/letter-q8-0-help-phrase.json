@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q8-0-help-phrase.ogg",
+    "duration": 1.71
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.02, "value": "X" },
+    { "start": 0.02, "end": 0.23, "value": "B" },
+    { "start": 0.23, "end": 0.80, "value": "C" },
+    { "start": 0.80, "end": 0.84, "value": "E" },
+    { "start": 0.84, "end": 1.00, "value": "F" },
+    { "start": 1.00, "end": 1.07, "value": "B" },
+    { "start": 1.07, "end": 1.14, "value": "G" },
+    { "start": 1.14, "end": 1.21, "value": "B" },
+    { "start": 1.21, "end": 1.28, "value": "C" },
+    { "start": 1.28, "end": 1.56, "value": "B" },
+    { "start": 1.56, "end": 1.71, "value": "X" }
+  ]
+}

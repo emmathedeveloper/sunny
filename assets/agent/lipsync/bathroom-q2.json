@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/bathroom-q2.ogg",
+    "duration": 1.43
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.06, "value": "X" },
+    { "start": 0.06, "end": 0.17, "value": "F" },
+    { "start": 0.17, "end": 0.45, "value": "B" },
+    { "start": 0.45, "end": 0.66, "value": "E" },
+    { "start": 0.66, "end": 0.94, "value": "F" },
+    { "start": 0.94, "end": 1.15, "value": "B" },
+    { "start": 1.15, "end": 1.43, "value": "X" }
+  ]
+}

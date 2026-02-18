@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q7-1-help-phrase.ogg",
+    "duration": 2.08
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.05, "value": "X" },
+    { "start": 0.05, "end": 0.32, "value": "B" },
+    { "start": 0.32, "end": 0.39, "value": "F" },
+    { "start": 0.39, "end": 0.46, "value": "C" },
+    { "start": 0.46, "end": 0.85, "value": "B" },
+    { "start": 0.85, "end": 0.95, "value": "G" },
+    { "start": 0.95, "end": 1.02, "value": "C" },
+    { "start": 1.02, "end": 1.16, "value": "B" },
+    { "start": 1.16, "end": 1.24, "value": "A" },
+    { "start": 1.24, "end": 1.83, "value": "B" },
+    { "start": 1.83, "end": 2.08, "value": "X" }
+  ]
+}

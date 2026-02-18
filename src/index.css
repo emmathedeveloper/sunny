@@ -1,0 +1,67 @@
+@import "../styles/globals.css";
+
+@layer base {
+  :root {
+    @apply font-sans;
+  }
+
+  body , html {
+    @apply h-svh w-svw bg-black;
+  }
+
+  #root {
+    @apply size-full;
+  }
+}
+
+.scale-in {
+  animation: scale-in .1s ease-out;
+}
+
+@keyframes scale-in {
+  0%{
+    transform: scale(.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Bubble animations for Activity 2B */
+@keyframes bubbleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.bubble-float {
+  animation: bubbleFloat 3s ease-in-out infinite alternate;
+}
+
+.bubble-float.delay-1 {
+  animation: bubbleFloat 3.5s ease-in-out infinite alternate;
+  animation-delay: 0.5s;
+}
+
+.bubble-float.delay-2 {
+  animation: bubbleFloat 4s ease-in-out infinite alternate;
+  animation-delay: 1s;
+}
+
+.bubble-float.delay-3 {
+  animation: bubbleFloat 3.2s ease-in-out infinite alternate;
+  animation-delay: 1.5s;
+}
+
+.bubble-float.delay-4 {
+  animation: bubbleFloat 3.7s ease-in-out infinite alternate;
+  animation-delay: 2s;
+}
+
+.bubble-float.delay-5 {
+  animation: bubbleFloat 3.3s ease-in-out infinite alternate;
+  animation-delay: 2.5s;
+}

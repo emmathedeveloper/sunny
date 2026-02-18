@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/bathroom-q6-0-help-phrase.ogg",
+    "duration": 0.21
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.10, "value": "C" },
+    { "start": 0.10, "end": 0.17, "value": "E" },
+    { "start": 0.17, "end": 0.21, "value": "X" }
+  ]
+}

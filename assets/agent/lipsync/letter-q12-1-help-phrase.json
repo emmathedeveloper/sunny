@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q12-1-help-phrase.ogg",
+    "duration": 1.99
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.09, "value": "C" },
+    { "start": 0.09, "end": 0.29, "value": "B" },
+    { "start": 0.29, "end": 0.36, "value": "F" },
+    { "start": 0.36, "end": 0.43, "value": "C" },
+    { "start": 0.43, "end": 0.88, "value": "B" },
+    { "start": 0.88, "end": 0.94, "value": "G" },
+    { "start": 0.94, "end": 1.00, "value": "C" },
+    { "start": 1.00, "end": 1.21, "value": "B" },
+    { "start": 1.21, "end": 1.29, "value": "A" },
+    { "start": 1.29, "end": 1.36, "value": "C" },
+    { "start": 1.36, "end": 1.43, "value": "B" },
+    { "start": 1.43, "end": 1.51, "value": "A" },
+    { "start": 1.51, "end": 1.58, "value": "B" },
+    { "start": 1.58, "end": 1.85, "value": "H" },
+    { "start": 1.85, "end": 1.99, "value": "X" }
+  ]
+}

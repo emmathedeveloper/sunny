@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q8.ogg",
+    "duration": 1.57
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.05, "value": "X" },
+    { "start": 0.05, "end": 0.11, "value": "D" },
+    { "start": 0.11, "end": 0.24, "value": "B" },
+    { "start": 0.24, "end": 0.31, "value": "G" },
+    { "start": 0.31, "end": 0.38, "value": "C" },
+    { "start": 0.38, "end": 0.59, "value": "B" },
+    { "start": 0.59, "end": 0.67, "value": "A" },
+    { "start": 0.67, "end": 0.82, "value": "B" },
+    { "start": 0.82, "end": 1.10, "value": "C" },
+    { "start": 1.10, "end": 1.38, "value": "B" },
+    { "start": 1.38, "end": 1.57, "value": "X" }
+  ]
+}

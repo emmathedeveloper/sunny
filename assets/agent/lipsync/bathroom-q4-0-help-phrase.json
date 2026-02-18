@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/bathroom-q4-0-help-phrase.ogg",
+    "duration": 2.13
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.05, "value": "X" },
+    { "start": 0.05, "end": 0.32, "value": "B" },
+    { "start": 0.32, "end": 0.39, "value": "D" },
+    { "start": 0.39, "end": 0.60, "value": "B" },
+    { "start": 0.60, "end": 0.67, "value": "C" },
+    { "start": 0.67, "end": 0.81, "value": "B" },
+    { "start": 0.81, "end": 0.93, "value": "X" },
+    { "start": 0.93, "end": 1.03, "value": "B" },
+    { "start": 1.03, "end": 1.31, "value": "F" },
+    { "start": 1.31, "end": 1.38, "value": "B" },
+    { "start": 1.38, "end": 1.45, "value": "C" },
+    { "start": 1.45, "end": 1.66, "value": "F" },
+    { "start": 1.66, "end": 1.73, "value": "B" },
+    { "start": 1.73, "end": 1.81, "value": "A" },
+    { "start": 1.81, "end": 2.13, "value": "X" }
+  ]
+}

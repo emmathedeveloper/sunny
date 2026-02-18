@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q10.ogg",
+    "duration": 1.48
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.06, "value": "X" },
+    { "start": 0.06, "end": 0.12, "value": "D" },
+    { "start": 0.12, "end": 0.24, "value": "B" },
+    { "start": 0.24, "end": 0.31, "value": "G" },
+    { "start": 0.31, "end": 0.38, "value": "C" },
+    { "start": 0.38, "end": 0.66, "value": "B" },
+    { "start": 0.66, "end": 0.73, "value": "C" },
+    { "start": 0.73, "end": 0.80, "value": "B" },
+    { "start": 0.80, "end": 0.87, "value": "C" },
+    { "start": 0.87, "end": 0.94, "value": "B" },
+    { "start": 0.94, "end": 1.15, "value": "C" },
+    { "start": 1.15, "end": 1.29, "value": "B" },
+    { "start": 1.29, "end": 1.48, "value": "X" }
+  ]
+}

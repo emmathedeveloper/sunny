@@ -1,0 +1,13 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/praise-2.ogg",
+    "duration": 0.78
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.40, "value": "B" },
+    { "start": 0.40, "end": 0.47, "value": "C" },
+    { "start": 0.47, "end": 0.61, "value": "B" },
+    { "start": 0.61, "end": 0.78, "value": "X" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q25-2-help-phrase.ogg",
+    "duration": 1.53
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.17, "value": "B" },
+    { "start": 0.17, "end": 0.25, "value": "A" },
+    { "start": 0.25, "end": 0.38, "value": "F" },
+    { "start": 0.38, "end": 0.66, "value": "B" },
+    { "start": 0.66, "end": 0.73, "value": "G" },
+    { "start": 0.73, "end": 0.80, "value": "E" },
+    { "start": 0.80, "end": 0.94, "value": "F" },
+    { "start": 0.94, "end": 1.08, "value": "D" },
+    { "start": 1.08, "end": 1.22, "value": "B" },
+    { "start": 1.22, "end": 1.53, "value": "X" }
+  ]
+}

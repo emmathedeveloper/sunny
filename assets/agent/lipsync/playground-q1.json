@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/playground-q1.ogg",
+    "duration": 1.62
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.05, "value": "X" },
+    { "start": 0.05, "end": 0.15, "value": "C" },
+    { "start": 0.15, "end": 0.23, "value": "A" },
+    { "start": 0.23, "end": 0.70, "value": "B" },
+    { "start": 0.70, "end": 0.91, "value": "F" },
+    { "start": 0.91, "end": 1.33, "value": "B" },
+    { "start": 1.33, "end": 1.62, "value": "X" }
+  ]
+}

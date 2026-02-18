@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q23-2-help-phrase.ogg",
+    "duration": 1.48
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.04, "value": "X" },
+    { "start": 0.04, "end": 0.15, "value": "B" },
+    { "start": 0.15, "end": 0.23, "value": "A" },
+    { "start": 0.23, "end": 0.36, "value": "F" },
+    { "start": 0.36, "end": 0.57, "value": "B" },
+    { "start": 0.57, "end": 0.70, "value": "A" },
+    { "start": 0.70, "end": 0.79, "value": "B" },
+    { "start": 0.79, "end": 1.14, "value": "D" },
+    { "start": 1.14, "end": 1.28, "value": "B" },
+    { "start": 1.28, "end": 1.48, "value": "X" }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/playground-q4-0-help-phrase.ogg",
+    "duration": 4.04
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.08, "value": "C" },
+    { "start": 0.08, "end": 0.13, "value": "D" },
+    { "start": 0.13, "end": 0.27, "value": "B" },
+    { "start": 0.27, "end": 0.41, "value": "F" },
+    { "start": 0.41, "end": 0.48, "value": "C" },
+    { "start": 0.48, "end": 0.62, "value": "B" },
+    { "start": 0.62, "end": 1.17, "value": "X" },
+    { "start": 1.17, "end": 1.67, "value": "B" },
+    { "start": 1.67, "end": 1.75, "value": "A" },
+    { "start": 1.75, "end": 2.00, "value": "B" },
+    { "start": 2.00, "end": 2.14, "value": "C" },
+    { "start": 2.14, "end": 2.28, "value": "B" },
+    { "start": 2.28, "end": 2.35, "value": "D" },
+    { "start": 2.35, "end": 2.49, "value": "B" },
+    { "start": 2.49, "end": 2.56, "value": "C" },
+    { "start": 2.56, "end": 2.70, "value": "H" },
+    { "start": 2.70, "end": 2.84, "value": "B" },
+    { "start": 2.84, "end": 2.98, "value": "F" },
+    { "start": 2.98, "end": 3.05, "value": "B" },
+    { "start": 3.05, "end": 3.12, "value": "C" },
+    { "start": 3.12, "end": 3.40, "value": "D" },
+    { "start": 3.40, "end": 3.54, "value": "B" },
+    { "start": 3.54, "end": 3.68, "value": "F" },
+    { "start": 3.68, "end": 4.04, "value": "X" }
+  ]
+}

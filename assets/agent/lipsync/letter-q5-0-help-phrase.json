@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q5-0-help-phrase.ogg",
+    "duration": 1.53
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.19, "value": "B" },
+    { "start": 0.19, "end": 0.65, "value": "C" },
+    { "start": 0.65, "end": 0.69, "value": "E" },
+    { "start": 0.69, "end": 0.84, "value": "F" },
+    { "start": 0.84, "end": 1.26, "value": "B" },
+    { "start": 1.26, "end": 1.53, "value": "X" }
+  ]
+}

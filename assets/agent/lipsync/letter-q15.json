@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q15.ogg",
+    "duration": 1.43
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.06, "value": "X" },
+    { "start": 0.06, "end": 0.21, "value": "C" },
+    { "start": 0.21, "end": 0.35, "value": "G" },
+    { "start": 0.35, "end": 0.42, "value": "C" },
+    { "start": 0.42, "end": 0.56, "value": "B" },
+    { "start": 0.56, "end": 0.84, "value": "F" },
+    { "start": 0.84, "end": 1.12, "value": "D" },
+    { "start": 1.12, "end": 1.43, "value": "X" }
+  ]
+}
