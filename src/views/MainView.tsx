@@ -545,7 +545,7 @@ const MainView = () => {
 
     useEffect(() => {
 
-        if (!hasGreeted || !hasClickedAvatar) return
+        // if (!hasGreeted || !hasClickedAvatar) return
 
         setAwaitingResponse(!conversationPaused)
         setIsAnimationPaused(conversationPaused)
