@@ -14,7 +14,7 @@ export default function useGameAudio({
     backgroundMusicUrl,
     winUrl,
     loseUrl,
-    bgVolume = .5,
+    bgVolume = .3,
     duckVolume = 0,
     fadeDuration = 0.5,
     fadeInDuration = 1,
@@ -33,6 +33,8 @@ export default function useGameAudio({
     const resultPlayingRef = useRef(false);
 
     const [paused, setPaused] = useState(false);
+    const [bgMuted, setBgMuted] = useState(false);
+    const bgVolumeRef = useRef(bgVolume);
 
     const init = useCallback(async () => {
         if (ctxRef.current) return;
@@ -179,6 +181,26 @@ export default function useGameAudio({
         setPaused(false);
     }, []);
 
+    const muteBackgroundMusic = useCallback(() => {
+        if (!bgGainRef.current) return;
+        bgGainRef.current.gain.value = 0;
+        setBgMuted(true);
+    }, []);
+
+    const unmuteBackgroundMusic = useCallback(() => {
+        if (!bgGainRef.current) return;
+        bgGainRef.current.gain.value = bgVolumeRef.current;
+        setBgMuted(false);
+    }, []);
+
+    const toggleBackgroundMute = useCallback(() => {
+        if (bgMuted) {
+            unmuteBackgroundMusic();
+        } else {
+            muteBackgroundMusic();
+        }
+    }, [bgMuted, muteBackgroundMusic, unmuteBackgroundMusic]);
+
     useEffect(() => {
         return () => {
             ctxRef.current?.close();
@@ -192,6 +214,10 @@ export default function useGameAudio({
         playLose,
         pauseAudio,
         resumeAudio,
+        muteBackgroundMusic,
+        unmuteBackgroundMusic,
+        toggleBackgroundMute,
         paused,
+        bgMuted,
     };
 }

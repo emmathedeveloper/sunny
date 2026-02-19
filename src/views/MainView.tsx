@@ -30,12 +30,11 @@ const MainView = () => {
         updateQuestions
     } = useGameContext()
 
-    const { playLose, playWin, pauseAudio, resumeAudio, startBackgroundMusic, init } = useGameAudio({
+    const { playLose, playWin, pauseAudio, resumeAudio, startBackgroundMusic, init, toggleBackgroundMute, bgMuted } = useGameAudio({
         backgroundMusicUrl: '/assets/music/bg1.m4a',
         winUrl: '/assets/music/win2.m4a',
         loseUrl: '/assets/music/loose.m4a',
         fadeInDuration: 2,
-        bgVolume: .2
     })
 
     const { isLoadingAvatar, setCurrentAnimation, setIsAnimationPaused } = useAvatarContext()
@@ -111,11 +110,11 @@ const MainView = () => {
         onConnect: () => {
             console.log("Connected to Scribe");
 
-            speak("general-greeting" , {
-                onStart(){
+            speak("general-greeting", {
+                onStart() {
                     setCurrentAnimation('waving_one_hand')
                 },
-                onEnd(){
+                onEnd() {
                     setCurrentAnimation('listen')
                     setHasGreeted(true)
                     setAwaitingResponse(true);
@@ -545,7 +544,7 @@ const MainView = () => {
 
     useEffect(() => {
 
-        // if (!hasGreeted || !hasClickedAvatar) return
+        if (!hasGreeted || !hasClickedAvatar) return
 
         setAwaitingResponse(!conversationPaused)
         setIsAnimationPaused(conversationPaused)
@@ -595,7 +594,29 @@ const MainView = () => {
 
                 {/* Bottom Reset Button */}
                 <div className='flex flex-col gap-2'>
-
+                    <button
+                        className="w-11 h-11 rounded-lg bg-black/20 flex items-center justify-center hover:bg-black/30 transition-colors text-white"
+                        title="Mute/Unmute background music"
+                        onClick={() => {
+                            toggleBackgroundMute()
+                        }}
+                    >
+                        {bgMuted ? (
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <line x1="23" y1="9" x2="17" y2="15"></line>
+                                <line x1="17" y1="9" x2="23" y2="15"></line>
+                            </svg>
+                        ) : (
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                            </svg>
+                        )}
+                    </button>
+                    {
+                        currentFlowState == 'game' &&
                         <button
                             className="w-11 h-11 rounded-lg bg-black/20 flex items-center justify-center hover:bg-black/30 transition-colors text-white"
                             title="Reset conversation"
@@ -605,6 +626,7 @@ const MainView = () => {
                         >
                             {conversationPaused ? <PlayIcon /> : <PauseIcon />}
                         </button>
+                    }
 
                     <button
                         onClick={resetActivity}
