@@ -1,18 +1,14 @@
 {
   "metadata": {
-    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q5-2-help-phrase.ogg",
-    "duration": 1.34
+    "soundFile": "./assets/agent/audio/letter-q5-2-help-phrase.ogg",
+    "duration": 1.30
   },
   "mouthCues": [
     { "start": 0.00, "end": 0.03, "value": "X" },
     { "start": 0.03, "end": 0.14, "value": "B" },
     { "start": 0.14, "end": 0.22, "value": "A" },
-    { "start": 0.22, "end": 0.34, "value": "F" },
-    { "start": 0.34, "end": 0.55, "value": "B" },
-    { "start": 0.55, "end": 0.62, "value": "G" },
-    { "start": 0.62, "end": 0.69, "value": "B" },
-    { "start": 0.69, "end": 0.76, "value": "G" },
-    { "start": 0.76, "end": 1.04, "value": "B" },
-    { "start": 1.04, "end": 1.34, "value": "X" }
+    { "start": 0.22, "end": 0.35, "value": "F" },
+    { "start": 0.35, "end": 1.05, "value": "B" },
+    { "start": 1.05, "end": 1.30, "value": "X" }
   ]
 }

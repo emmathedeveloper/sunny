@@ -1,24 +1,22 @@
 {
   "metadata": {
-    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/playground-q4.ogg",
-    "duration": 2.32
+    "soundFile": "./assets/agent/audio/playground-q4.ogg",
+    "duration": 2.46
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.07, "value": "X" },
-    { "start": 0.07, "end": 0.12, "value": "F" },
-    { "start": 0.12, "end": 0.17, "value": "B" },
-    { "start": 0.17, "end": 0.24, "value": "E" },
-    { "start": 0.24, "end": 0.31, "value": "B" },
-    { "start": 0.31, "end": 0.38, "value": "C" },
-    { "start": 0.38, "end": 0.73, "value": "B" },
-    { "start": 0.73, "end": 0.81, "value": "A" },
-    { "start": 0.81, "end": 1.45, "value": "B" },
-    { "start": 1.45, "end": 1.52, "value": "C" },
-    { "start": 1.52, "end": 1.59, "value": "B" },
-    { "start": 1.59, "end": 1.67, "value": "A" },
-    { "start": 1.67, "end": 1.80, "value": "D" },
-    { "start": 1.80, "end": 1.87, "value": "C" },
-    { "start": 1.87, "end": 2.08, "value": "B" },
-    { "start": 2.08, "end": 2.32, "value": "X" }
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.13, "value": "F" },
+    { "start": 0.13, "end": 0.34, "value": "B" },
+    { "start": 0.34, "end": 0.41, "value": "C" },
+    { "start": 0.41, "end": 0.83, "value": "B" },
+    { "start": 0.83, "end": 0.91, "value": "A" },
+    { "start": 0.91, "end": 1.53, "value": "B" },
+    { "start": 1.53, "end": 1.60, "value": "C" },
+    { "start": 1.60, "end": 1.67, "value": "B" },
+    { "start": 1.67, "end": 1.75, "value": "A" },
+    { "start": 1.75, "end": 1.87, "value": "D" },
+    { "start": 1.87, "end": 1.94, "value": "C" },
+    { "start": 1.94, "end": 2.15, "value": "B" },
+    { "start": 2.15, "end": 2.46, "value": "X" }
   ]
 }
