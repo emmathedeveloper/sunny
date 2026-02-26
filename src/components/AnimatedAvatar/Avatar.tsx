@@ -1,9 +1,7 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
 import {
-  OrbitControls,
   Environment,
-  Grid,
   PerspectiveCamera,
 } from "@react-three/drei";
 import { BearModel } from "./BearModel";

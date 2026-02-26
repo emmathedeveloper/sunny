@@ -7,39 +7,6 @@ import { useFrame } from '@react-three/fiber';
 
 // Viseme mapping for lip sync
 const visemeMapping = {
-  // "viseme_sil": null, // silence
-  // "viseme_PP": "viseme_PP", // P, B, M
-  // "viseme_FF": "viseme_FF", // F, V
-  // "viseme_TH": "viseme_TH", // TH
-  // "viseme_DD": "viseme_DD", // T, D, N, L
-  // "viseme_kk": "viseme_kk", // K, G
-  // "viseme_CH": "viseme_CH", // CH, J, SH
-  // "viseme_SS": "viseme_SS", // S, Z
-  // "viseme_nn": "viseme_nn", // N
-  // "viseme_RR": "viseme_RR", // R
-  // "viseme_aa": "viseme_AA", // A (as in cat)
-  // "viseme_AA": "viseme_AA", // A (as in cat)
-  // "viseme_E": "viseme_E",   // E (as in red)
-  // "viseme_I": "viseme_I",   // I (as in bit)
-  // "viseme_O": "viseme_O",   // O (as in hot)
-  // "viseme_U": "viseme_U",   // U (as in put)
-  // // Handle versions without the viseme_ prefix
-  // "sil": null,
-  // "PP": "viseme_PP",
-  // "FF": "viseme_FF",
-  // "TH": "viseme_TH",
-  // "DD": "viseme_DD",
-  // "kk": "viseme_kk",
-  // "CH": "viseme_CH",
-  // "SS": "viseme_SS",
-  // "nn": "viseme_nn",
-  // "RR": "viseme_RR",
-  // "aa": "viseme_AA",
-  // "E": "viseme_E",
-  // "I": "viseme_I",
-  // "O": "viseme_O",
-  // "U": "viseme_U",
-
   A: "Mbp",   // closed - M, B, P ✓ exact match
   B: "Cdest", // slightly open - K, S, T, D, N, R
   C: "Ai",    // open - EH, EY

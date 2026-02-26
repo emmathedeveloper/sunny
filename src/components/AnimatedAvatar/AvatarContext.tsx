@@ -1,7 +1,5 @@
-import { useFrame } from "@react-three/fiber";
-import { createContext, useContext, useEffect, useRef, useState, type Dispatch, type ReactNode, type Ref, type RefObject, type SetStateAction } from "react";
+import { createContext, useContext, useEffect, useRef, useState, type Dispatch, type ReactNode, type RefObject, type SetStateAction } from "react";
 import type { Scene } from "three";
-import * as THREE from "three";
 
 type VisemeFrame = {
     start: number,
@@ -64,26 +62,6 @@ const AvatarProvider = ({ children }: { children?: ReactNode }) => {
     useEffect(() => {
 
     } , []);
-
-    function applyViseme(visemeName: string) {
-
-        if(!scene.current) return
-
-        scene.current.traverse((child: any) => {
-            if (
-                child instanceof THREE.Mesh &&
-                child.morphTargetDictionary &&
-                child.morphTargetInfluences
-            ) {
-                Object.keys(child.morphTargetDictionary).forEach((key) => {
-                    const index = child.morphTargetDictionary![key];
-
-                    if(index) child.morphTargetInfluences![index] =
-                        key === visemeName ? 1 : 0;
-                });
-            }
-        });
-    }
 
 
     return (
