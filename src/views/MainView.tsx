@@ -6,7 +6,7 @@ import useAgentSpeechState from '@/hooks/useAgentSpeechState';
 import useAppWebSocket from '@/hooks/useAppWebSocket';
 import useGameAudio from '@/hooks/useGameAudio';
 import { QUESTIONS, type QuestionType } from '@/lib/client/questions';
-import { PRAISE_MESSAGES, userAgreed } from '@/lib/client/utils';
+import { phraseExists, PRAISE_MESSAGES, userAgreed } from '@/lib/client/utils';
 import { cn } from '@/lib/utils';
 import { AudioFormat, CommitStrategy, useScribe } from '@elevenlabs/react';
 import { PauseIcon, PlayIcon } from 'lucide-react';
@@ -256,7 +256,7 @@ const MainView = () => {
         }
 
         //Check if answer is correct
-        if (currentQuestion && currentQuestion.answers.some(answer => transcript.toLowerCase().includes(answer.toLowerCase()))) {
+        if (currentQuestion && currentQuestion.answers.some(answer => phraseExists(transcript, answer))) {
 
             //Check if this is the last question.
             if (isLastQuestion && isLastRoom) {

@@ -11,3 +11,13 @@ export const getRandomItem = <T>(items: T[]) => {
 }
 
 export const userAgreed = (text: string) => AGREEMENT_PHRASES.some(p => text.toLowerCase().includes(p))
+
+export const phraseExists = (sentence: string, phrase: string) => {
+  const escaped = phrase
+    .trim()
+    .split(/\s+/)
+    .join("\\s+");
+
+  const regex = new RegExp(`\\b${escaped}\\b`, "i");
+  return regex.test(sentence);
+}
