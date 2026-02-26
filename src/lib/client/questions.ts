@@ -100,13 +100,13 @@ export const QUESTIONS = {
       difficulty: DIFFICULTY.MEDIUM,
     },
     {
-      question: "What are the children building?",
+      question: "What are the children building in the sandbox?",
       helpPhrases: ["They are building a sandcastle, can you say sandcastle?"],
       answers: ["castle", "sandcastle", 'sand castle', "kasu", "ekasu", "picasso"],
       difficulty: DIFFICULTY.MEDIUM,
     },
     {
-      question: "Who is on the swing?",
+      question: "Is there a girl or a boy on the swing?",
       helpPhrases: ["A girl is on the swing, can you say girl?"],
       answers: ["girl", "a girl", "gurl", "grill", "curl"],
       difficulty: DIFFICULTY.MEDIUM,
@@ -148,7 +148,7 @@ export const QUESTIONS = {
       difficulty: DIFFICULTY.MEDIUM,
     },
     {
-      question: "What is the girl in the sandbox wearing?",
+      question: "What is the girl in the sandbox wearing on her head?",
       helpPhrases: ["She is wearing a hat, can you say hat?"],
       answers: ["hat", "a hat", "hatted", "hatter", "hatterr", "at", "at", "heart", "hot", "that", "hut"],
       difficulty: DIFFICULTY.HARD,
@@ -168,7 +168,7 @@ export const QUESTIONS = {
     {
       question: "What shape is the ball?",
       helpPhrases: ["The ball is round, can you say round?"],
-      answers: ["round", "round ball", "round shape", "bound", "found", "hound", "mound", "pound", "sphere", "fere", "fare", "fur"],
+      answers: ["round" , "circle", "round ball", "round shape", "bound", "found", "hound", "mound", "pound", "sphere", "fere", "fare", "fur"],
       difficulty: DIFFICULTY.HARD,
     },
     {
