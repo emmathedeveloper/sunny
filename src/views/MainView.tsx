@@ -23,6 +23,7 @@ const MainView = () => {
         setQuestionFailureCount,
         readyForNewRoom,
         setReadyForNewRoom,
+        difficulty,
         failureStreak,
         setFailureStreak,
         correctStreak,
@@ -291,37 +292,99 @@ const MainView = () => {
                 return
             }
 
-            await speak(`praise-${Math.floor(Math.random() * PRAISE_MESSAGES.length)}`, {
-                onStart() {
-                    setCurrentAnimation('thumbs_up')
-                    playWin()
-                    setAwaitingResponse(false)
-                    setCorrectCount(p => p + 1)
-                    setCorrectStreak(p => p + 1)
-                    setQuestionFailureCount(0)
-                },
-                onEnd() {
-                    setTimeout(() => {
-                        setCurrentAnimation('idle')
-                        askNextQuestion()
-                    }, 2000)
+            if (correctStreak >= 1) {
+
+                let transitionMessage = ''
+
+                switch (difficulty) {
+                    case "easy":
+                        transitionMessage = "easy-to-medium"
+                        break;
+                    case "medium":
+                        transitionMessage = "medium-to-hard"
+                        break;
+                    default:
+                        transitionMessage = "easy-to-medium"
+                        break;
                 }
-            })
+
+                await speak(`praise-${Math.floor(Math.random() * PRAISE_MESSAGES.length)}`, {
+                    onStart() {
+                        setCurrentAnimation('thumbs_up')
+                        playWin()
+                        setAwaitingResponse(false)
+                        setCorrectCount(0)
+                        setCorrectStreak(0)
+                        setQuestionFailureCount(0)
+                    },
+                    onEnd() {
+                        setTimeout(() => {
+                            speak(`game-difficulty-transition-${transitionMessage}`, {
+                                onStart() {
+                                    setCurrentAnimation('talking')
+                                    setCorrectStreak(0)
+                                },
+                                onEnd() {
+                                    setCurrentAnimation('idle')
+                                    askNextQuestion()
+                                }
+                            })
+                        }, 2000)
+                    }
+                })
+            } else {
+                await speak(`praise-${Math.floor(Math.random() * PRAISE_MESSAGES.length)}`, {
+                    onStart() {
+                        setCurrentAnimation('thumbs_up')
+                        playWin()
+                        setAwaitingResponse(false)
+                        setCorrectCount(p => p + 1)
+                        setCorrectStreak(p => p + 1)
+                        setQuestionFailureCount(0)
+                    },
+                    onEnd() {
+                        setTimeout(() => {
+                            setCurrentAnimation('idle')
+                            askNextQuestion()
+                        }, 2000)
+                    }
+                })
+            }
 
 
         } else {
             if (currentQuestion) {
 
-                //If a question has been failed three or more times, change the question
-                if (questionFailureCount >= 3) {
+                //If a question has been failed two or more times, change the question
+                if (questionFailureCount >= 2) {
+
+                    let transitionMessage = ''
+
+                    switch (difficulty) {
+                        case "medium":
+                            transitionMessage = "medium-to-easy"
+                            break;
+                        case "hard":
+                            transitionMessage = "hard-to-medium"
+                            break;
+                        default:
+                            transitionMessage = "medium-to-easy"
+                            break;
+                    }
 
                     //Let the child know they answered wrong and that we will move to the next question
                     await speak(`game-wrong-answer`, {
                         onStart() {
+                            setAwaitingResponse(false)
                             setCurrentAnimation('sad_idle')
                             playLose()
-                            setQuestionFailureCount(0)
+                        },
+                    })
 
+                    await speak(`game-difficulty-transition-${transitionMessage}`, {
+                        onStart() {
+                            setCurrentAnimation('talking')
+                            setQuestionFailureCount(0)
                             //Increment the failure streak
                             setFailureStreak(p => p + 1)
                         },

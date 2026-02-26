@@ -27,7 +27,9 @@ type GameContextType = {
     updateQuestions: (room: RoomType) => QuestionType[],
     QUESTIONS_PER_ROOM: number,
     getNextQuestion: (room: RoomType, excludeAsked?: string[]) => QuestionType | undefined,
-    resetForNextRoom: () => void
+    resetForNextRoom: () => void,
+    difficulty: DIFFICULTY,
+    setDifficulty: Dispatch<SetStateAction<DIFFICULTY>>,
 }
 
 export const GameContext = createContext({} as GameContextType)
@@ -190,7 +192,9 @@ export const GameProvider = ({ children }: { children?: ReactNode }) => {
             getNextQuestion,
             correctCount,
             setCorrectCount,
-            resetForNextRoom
+            resetForNextRoom,
+            difficulty,
+            setDifficulty
         }}>
             {children}
         </GameContext.Provider>

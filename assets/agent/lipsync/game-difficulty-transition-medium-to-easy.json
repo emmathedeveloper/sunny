@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/assets/agent/audio/game-difficulty-transition-medium-to-easy.ogg",
+    "duration": 2.13
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.05, "value": "X" },
+    { "start": 0.05, "end": 0.18, "value": "F" },
+    { "start": 0.18, "end": 0.25, "value": "C" },
+    { "start": 0.25, "end": 0.39, "value": "E" },
+    { "start": 0.39, "end": 0.46, "value": "B" },
+    { "start": 0.46, "end": 0.53, "value": "F" },
+    { "start": 0.53, "end": 0.74, "value": "B" },
+    { "start": 0.74, "end": 0.81, "value": "C" },
+    { "start": 0.81, "end": 0.88, "value": "B" },
+    { "start": 0.88, "end": 0.95, "value": "C" },
+    { "start": 0.95, "end": 1.37, "value": "B" },
+    { "start": 1.37, "end": 1.44, "value": "F" },
+    { "start": 1.44, "end": 1.51, "value": "C" },
+    { "start": 1.51, "end": 1.65, "value": "B" },
+    { "start": 1.65, "end": 1.79, "value": "C" },
+    { "start": 1.79, "end": 2.13, "value": "X" }
+  ]
+}
