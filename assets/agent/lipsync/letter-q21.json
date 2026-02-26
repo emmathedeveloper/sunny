@@ -1,18 +1,16 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q21.ogg",
-    "duration": 1.53
+    "duration": 1.48
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.03, "value": "X" },
-    { "start": 0.03, "end": 0.09, "value": "C" },
-    { "start": 0.09, "end": 0.15, "value": "D" },
-    { "start": 0.15, "end": 0.22, "value": "B" },
-    { "start": 0.22, "end": 0.36, "value": "G" },
-    { "start": 0.36, "end": 0.57, "value": "B" },
-    { "start": 0.57, "end": 0.64, "value": "H" },
-    { "start": 0.64, "end": 1.13, "value": "B" },
-    { "start": 1.13, "end": 1.20, "value": "F" },
-    { "start": 1.20, "end": 1.53, "value": "X" }
+    { "start": 0.00, "end": 0.02, "value": "X" },
+    { "start": 0.02, "end": 0.18, "value": "E" },
+    { "start": 0.18, "end": 0.25, "value": "F" },
+    { "start": 0.25, "end": 0.39, "value": "G" },
+    { "start": 0.39, "end": 0.60, "value": "B" },
+    { "start": 0.60, "end": 0.74, "value": "C" },
+    { "start": 0.74, "end": 1.30, "value": "F" },
+    { "start": 1.30, "end": 1.48, "value": "X" }
   ]
 }

@@ -1,21 +1,21 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q26-1-help-phrase.ogg",
-    "duration": 2.04
+    "duration": 1.99
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.03, "value": "X" },
-    { "start": 0.03, "end": 0.10, "value": "D" },
-    { "start": 0.10, "end": 0.31, "value": "B" },
+    { "start": 0.00, "end": 0.04, "value": "X" },
+    { "start": 0.04, "end": 0.31, "value": "B" },
     { "start": 0.31, "end": 0.38, "value": "F" },
-    { "start": 0.38, "end": 0.45, "value": "C" },
-    { "start": 0.45, "end": 0.75, "value": "B" },
-    { "start": 0.75, "end": 0.84, "value": "G" },
-    { "start": 0.84, "end": 0.91, "value": "C" },
-    { "start": 0.91, "end": 1.05, "value": "B" },
-    { "start": 1.05, "end": 1.12, "value": "H" },
-    { "start": 1.12, "end": 1.19, "value": "C" },
-    { "start": 1.19, "end": 1.75, "value": "B" },
-    { "start": 1.75, "end": 2.04, "value": "X" }
+    { "start": 0.38, "end": 0.63, "value": "B" },
+    { "start": 0.63, "end": 0.75, "value": "G" },
+    { "start": 0.75, "end": 0.82, "value": "C" },
+    { "start": 0.82, "end": 0.96, "value": "B" },
+    { "start": 0.96, "end": 1.03, "value": "C" },
+    { "start": 1.03, "end": 1.10, "value": "H" },
+    { "start": 1.10, "end": 1.38, "value": "B" },
+    { "start": 1.38, "end": 1.52, "value": "C" },
+    { "start": 1.52, "end": 1.73, "value": "B" },
+    { "start": 1.73, "end": 1.99, "value": "X" }
   ]
 }

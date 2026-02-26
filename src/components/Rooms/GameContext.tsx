@@ -93,7 +93,9 @@ export const GameProvider = ({ children }: { children?: ReactNode }) => {
             setAskedQuestions(p => ([...p, currentQuestion.id]))
         }
 
-        const found = QUESTIONS[roomToUse].find(
+        let found: QuestionType | undefined;
+
+        found = QUESTIONS[roomToUse].find(
             q => !askedToUse.includes(q.id) &&
                 q.difficulty === difficulty &&
                 q.id !== currentQuestion?.id
@@ -101,12 +103,22 @@ export const GameProvider = ({ children }: { children?: ReactNode }) => {
 
         if (found) {
             setCurrentQuestion({ ...found })
-        } else {
-            setCurrentQuestion(null)
+        } else{
+            found = QUESTIONS[roomToUse].find(
+                q => !askedToUse.includes(q.id) &&
+                    q.id !== currentQuestion?.id
+            )
+
+            if(found){
+                setDifficulty(found.difficulty)
+                setCurrentQuestion(found)
+            }else {
+                setCurrentQuestion(null)
+            }
         }
 
         return found
-    }, [currentRoom, askedQuestions, difficulty, currentQuestion, setAskedQuestions, setCurrentQuestion])
+    }, [currentRoom, askedQuestions, difficulty, currentQuestion, setAskedQuestions, setCurrentQuestion , setDifficulty])
 
     const resetForNextRoom = () => {
         setAskedQuestions([])

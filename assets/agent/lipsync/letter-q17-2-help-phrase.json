@@ -1,16 +1,16 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q17-2-help-phrase.ogg",
-    "duration": 1.39
+    "duration": 1.43
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.03, "value": "X" },
-    { "start": 0.03, "end": 0.15, "value": "B" },
-    { "start": 0.15, "end": 0.23, "value": "A" },
-    { "start": 0.23, "end": 0.36, "value": "F" },
-    { "start": 0.36, "end": 0.64, "value": "B" },
-    { "start": 0.64, "end": 0.71, "value": "G" },
-    { "start": 0.71, "end": 1.13, "value": "F" },
-    { "start": 1.13, "end": 1.39, "value": "X" }
+    { "start": 0.00, "end": 0.02, "value": "X" },
+    { "start": 0.02, "end": 0.18, "value": "B" },
+    { "start": 0.18, "end": 0.29, "value": "A" },
+    { "start": 0.29, "end": 0.47, "value": "B" },
+    { "start": 0.47, "end": 0.68, "value": "F" },
+    { "start": 0.68, "end": 1.03, "value": "B" },
+    { "start": 1.03, "end": 1.18, "value": "A" },
+    { "start": 1.18, "end": 1.43, "value": "X" }
   ]
 }

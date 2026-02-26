@@ -1,19 +1,19 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/general-lets-start.ogg",
-    "duration": 1.81
+    "duration": 1.67
   },
   "mouthCues": [
     { "start": 0.00, "end": 0.04, "value": "X" },
-    { "start": 0.04, "end": 0.30, "value": "C" },
-    { "start": 0.30, "end": 0.58, "value": "B" },
-    { "start": 0.58, "end": 0.63, "value": "H" },
-    { "start": 0.63, "end": 0.82, "value": "B" },
-    { "start": 0.82, "end": 1.03, "value": "D" },
-    { "start": 1.03, "end": 1.17, "value": "B" },
-    { "start": 1.17, "end": 1.38, "value": "C" },
-    { "start": 1.38, "end": 1.45, "value": "B" },
-    { "start": 1.45, "end": 1.60, "value": "A" },
-    { "start": 1.60, "end": 1.81, "value": "X" }
+    { "start": 0.04, "end": 0.29, "value": "C" },
+    { "start": 0.29, "end": 0.68, "value": "B" },
+    { "start": 0.68, "end": 0.78, "value": "D" },
+    { "start": 0.78, "end": 0.82, "value": "C" },
+    { "start": 0.82, "end": 0.91, "value": "A" },
+    { "start": 0.91, "end": 0.95, "value": "B" },
+    { "start": 0.95, "end": 1.20, "value": "C" },
+    { "start": 1.20, "end": 1.27, "value": "B" },
+    { "start": 1.27, "end": 1.39, "value": "A" },
+    { "start": 1.39, "end": 1.67, "value": "X" }
   ]
 }

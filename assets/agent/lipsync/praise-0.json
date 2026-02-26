@@ -1,15 +1,12 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/praise-0.ogg",
-    "duration": 0.97
+    "duration": 0.88
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.03, "value": "X" },
-    { "start": 0.03, "end": 0.15, "value": "B" },
-    { "start": 0.15, "end": 0.22, "value": "C" },
-    { "start": 0.22, "end": 0.43, "value": "B" },
-    { "start": 0.43, "end": 0.50, "value": "D" },
-    { "start": 0.50, "end": 0.70, "value": "A" },
-    { "start": 0.70, "end": 0.97, "value": "X" }
+    { "start": 0.00, "end": 0.39, "value": "B" },
+    { "start": 0.39, "end": 0.46, "value": "D" },
+    { "start": 0.46, "end": 0.64, "value": "A" },
+    { "start": 0.64, "end": 0.88, "value": "X" }
   ]
 }

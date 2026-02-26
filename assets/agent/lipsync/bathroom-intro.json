@@ -1,16 +1,15 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/bathroom-intro.ogg",
-    "duration": 1.48
+    "duration": 1.53
   },
   "mouthCues": [
     { "start": 0.00, "end": 0.04, "value": "X" },
-    { "start": 0.04, "end": 0.12, "value": "H" },
-    { "start": 0.12, "end": 0.19, "value": "B" },
-    { "start": 0.19, "end": 0.40, "value": "F" },
-    { "start": 0.40, "end": 0.61, "value": "B" },
-    { "start": 0.61, "end": 0.69, "value": "A" },
-    { "start": 0.69, "end": 1.26, "value": "B" },
-    { "start": 1.26, "end": 1.48, "value": "X" }
+    { "start": 0.04, "end": 0.10, "value": "B" },
+    { "start": 0.10, "end": 0.37, "value": "F" },
+    { "start": 0.37, "end": 0.51, "value": "B" },
+    { "start": 0.51, "end": 0.59, "value": "A" },
+    { "start": 0.59, "end": 1.16, "value": "B" },
+    { "start": 1.16, "end": 1.53, "value": "X" }
   ]
 }

@@ -1,16 +1,18 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q12-2-help-phrase.ogg",
-    "duration": 1.39
+    "duration": 1.30
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.02, "value": "X" },
-    { "start": 0.02, "end": 0.12, "value": "B" },
-    { "start": 0.12, "end": 0.20, "value": "A" },
-    { "start": 0.20, "end": 0.33, "value": "F" },
-    { "start": 0.33, "end": 0.68, "value": "B" },
-    { "start": 0.68, "end": 0.96, "value": "C" },
-    { "start": 0.96, "end": 1.13, "value": "A" },
-    { "start": 1.13, "end": 1.39, "value": "X" }
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.11, "value": "B" },
+    { "start": 0.11, "end": 0.19, "value": "A" },
+    { "start": 0.19, "end": 0.31, "value": "F" },
+    { "start": 0.31, "end": 0.52, "value": "B" },
+    { "start": 0.52, "end": 0.59, "value": "G" },
+    { "start": 0.59, "end": 0.66, "value": "E" },
+    { "start": 0.66, "end": 0.80, "value": "C" },
+    { "start": 0.80, "end": 1.01, "value": "H" },
+    { "start": 1.01, "end": 1.30, "value": "X" }
   ]
 }

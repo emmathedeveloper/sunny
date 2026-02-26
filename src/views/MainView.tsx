@@ -313,7 +313,7 @@ const MainView = () => {
                         setCurrentAnimation('thumbs_up')
                         playWin()
                         setAwaitingResponse(false)
-                        setCorrectCount(0)
+                        setCorrectCount(p => p + 1)
                         setCorrectStreak(0)
                         setQuestionFailureCount(0)
                     },

@@ -1,16 +1,16 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/playground-q3.ogg",
-    "duration": 1.57
+    "duration": 1.53
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.04, "value": "X" },
-    { "start": 0.04, "end": 0.16, "value": "C" },
-    { "start": 0.16, "end": 0.24, "value": "A" },
-    { "start": 0.24, "end": 0.29, "value": "C" },
-    { "start": 0.29, "end": 0.69, "value": "B" },
-    { "start": 0.69, "end": 0.90, "value": "F" },
-    { "start": 0.90, "end": 1.32, "value": "B" },
-    { "start": 1.32, "end": 1.57, "value": "X" }
+    { "start": 0.00, "end": 0.06, "value": "X" },
+    { "start": 0.06, "end": 0.15, "value": "C" },
+    { "start": 0.15, "end": 0.23, "value": "A" },
+    { "start": 0.23, "end": 0.28, "value": "C" },
+    { "start": 0.28, "end": 0.61, "value": "B" },
+    { "start": 0.61, "end": 0.89, "value": "F" },
+    { "start": 0.89, "end": 1.24, "value": "B" },
+    { "start": 1.24, "end": 1.53, "value": "X" }
   ]
 }

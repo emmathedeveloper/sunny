@@ -1,24 +1,22 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q7-1-help-phrase.ogg",
-    "duration": 2.18
+    "duration": 1.99
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.04, "value": "X" },
-    { "start": 0.04, "end": 0.08, "value": "C" },
-    { "start": 0.08, "end": 0.19, "value": "E" },
-    { "start": 0.19, "end": 0.26, "value": "C" },
-    { "start": 0.26, "end": 0.33, "value": "F" },
-    { "start": 0.33, "end": 0.40, "value": "C" },
-    { "start": 0.40, "end": 0.64, "value": "B" },
-    { "start": 0.64, "end": 0.80, "value": "G" },
-    { "start": 0.80, "end": 1.01, "value": "B" },
-    { "start": 1.01, "end": 1.08, "value": "H" },
-    { "start": 1.08, "end": 1.16, "value": "E" },
-    { "start": 1.16, "end": 1.36, "value": "F" },
-    { "start": 1.36, "end": 1.51, "value": "B" },
-    { "start": 1.51, "end": 1.71, "value": "F" },
-    { "start": 1.71, "end": 1.92, "value": "B" },
-    { "start": 1.92, "end": 2.18, "value": "X" }
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.08, "value": "C" },
+    { "start": 0.08, "end": 0.13, "value": "D" },
+    { "start": 0.13, "end": 0.34, "value": "B" },
+    { "start": 0.34, "end": 0.41, "value": "F" },
+    { "start": 0.41, "end": 0.48, "value": "C" },
+    { "start": 0.48, "end": 0.74, "value": "B" },
+    { "start": 0.74, "end": 0.91, "value": "G" },
+    { "start": 0.91, "end": 1.05, "value": "B" },
+    { "start": 1.05, "end": 1.12, "value": "C" },
+    { "start": 1.12, "end": 1.47, "value": "B" },
+    { "start": 1.47, "end": 1.75, "value": "C" },
+    { "start": 1.75, "end": 1.96, "value": "B" },
+    { "start": 1.96, "end": 1.99, "value": "X" }
   ]
 }
