@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/bathroom-q2.ogg",
-    "duration": 1.48
+    "soundFile": "./assets/agent/audio/bathroom-q2.ogg",
+    "duration": 1.62
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.04, "value": "X" },
-    { "start": 0.04, "end": 0.17, "value": "F" },
-    { "start": 0.17, "end": 0.45, "value": "B" },
-    { "start": 0.45, "end": 0.66, "value": "E" },
-    { "start": 0.66, "end": 1.01, "value": "F" },
-    { "start": 1.01, "end": 1.22, "value": "B" },
-    { "start": 1.22, "end": 1.48, "value": "X" }
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.16, "value": "F" },
+    { "start": 0.16, "end": 0.44, "value": "B" },
+    { "start": 0.44, "end": 0.72, "value": "E" },
+    { "start": 0.72, "end": 1.00, "value": "F" },
+    { "start": 1.00, "end": 1.28, "value": "B" },
+    { "start": 1.28, "end": 1.62, "value": "X" }
   ]
 }

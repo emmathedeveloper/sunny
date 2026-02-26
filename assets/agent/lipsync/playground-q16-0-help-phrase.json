@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "soundFile": "./assets/agent/audio/playground-q16-0-help-phrase.ogg",
+    "duration": 2.55
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.06, "value": "X" },
+    { "start": 0.06, "end": 0.23, "value": "B" },
+    { "start": 0.23, "end": 0.44, "value": "F" },
+    { "start": 0.44, "end": 0.72, "value": "B" },
+    { "start": 0.72, "end": 0.86, "value": "H" },
+    { "start": 0.86, "end": 0.93, "value": "D" },
+    { "start": 0.93, "end": 1.39, "value": "B" },
+    { "start": 1.39, "end": 1.53, "value": "F" },
+    { "start": 1.53, "end": 1.60, "value": "B" },
+    { "start": 1.60, "end": 1.74, "value": "C" },
+    { "start": 1.74, "end": 1.88, "value": "B" },
+    { "start": 1.88, "end": 2.02, "value": "H" },
+    { "start": 2.02, "end": 2.09, "value": "C" },
+    { "start": 2.09, "end": 2.30, "value": "B" },
+    { "start": 2.30, "end": 2.55, "value": "X" }
+  ]
+}

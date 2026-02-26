@@ -32,7 +32,6 @@ export enum DIFFICULTY {
 
 export const QUESTIONS = {
   playground: [
-    // the easy one eve
     {
       question: "How many children do you see?",
       helpPhrases: ["There are four children. Can you say four?"],
@@ -87,8 +86,6 @@ export const QUESTIONS = {
       answers: ["yes", "yeah", "yep", "yup", "ya"],
       difficulty: DIFFICULTY.EASY,
     },
-
-    // the medium one eve
     {
       question: "What color is the slide?",
       helpPhrases: ["Not quite!, the slide is orange, can you say orange?"],
@@ -143,8 +140,6 @@ export const QUESTIONS = {
       answers: ["grass", "on the grass", "gass", "glass", "grease"],
       difficulty: DIFFICULTY.MEDIUM,
     },
-
-    // the hard one eve
     {
       question: "What is the girl in the sandbox wearing?",
       helpPhrases: ["She is wearing a hat, can you say hat?"],
@@ -202,7 +197,6 @@ export const QUESTIONS = {
   ].map((q, i) => ({ ...q, id: `q${i + 1}` })),
 
   bathroom: [
-    // the easy one nigga
     {
       question: "What room is this?",
       helpPhrases: ["Not really, this a a bathroom, did i hear you say bathroom?"],
@@ -257,8 +251,6 @@ export const QUESTIONS = {
       answers: ["yes", "yeah", "yep", "yup", "ya"],
       difficulty: DIFFICULTY.EASY,
     },
-
-    // the medium one nigga
     {
       question: "How many towels are on the wall?",
       helpPhrases: ["There are two towels did i hear you say two?"],
@@ -313,8 +305,6 @@ export const QUESTIONS = {
       answers: ["tub", "bathtub", "bath", "bath tub", "bathroom tub"],
       difficulty: DIFFICULTY.MEDIUM,
     },
-
-    // the hard one nigga
     {
       question: "What is the girl standing on?",
       helpPhrases: ["She is standing on a stool, did i hear you say stool?"],

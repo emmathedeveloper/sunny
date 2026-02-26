@@ -1,13 +1,14 @@
 {
   "metadata": {
-    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/praise-1.ogg",
-    "duration": 0.74
+    "soundFile": "./assets/agent/audio/praise-1.ogg",
+    "duration": 0.65
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.06, "value": "X" },
-    { "start": 0.06, "end": 0.24, "value": "C" },
-    { "start": 0.24, "end": 0.31, "value": "G" },
-    { "start": 0.31, "end": 0.52, "value": "B" },
-    { "start": 0.52, "end": 0.74, "value": "X" }
+    { "start": 0.00, "end": 0.01, "value": "X" },
+    { "start": 0.01, "end": 0.05, "value": "A" },
+    { "start": 0.05, "end": 0.18, "value": "E" },
+    { "start": 0.18, "end": 0.32, "value": "G" },
+    { "start": 0.32, "end": 0.53, "value": "B" },
+    { "start": 0.53, "end": 0.65, "value": "X" }
   ]
 }

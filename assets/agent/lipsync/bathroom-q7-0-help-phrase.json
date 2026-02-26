@@ -1,36 +1,15 @@
 {
   "metadata": {
-    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/bathroom-q7-0-help-phrase.ogg",
-    "duration": 4.41
+    "soundFile": "./assets/agent/audio/bathroom-q7-0-help-phrase.ogg",
+    "duration": 1.48
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.05, "value": "X" },
-    { "start": 0.05, "end": 0.11, "value": "C" },
-    { "start": 0.11, "end": 0.31, "value": "B" },
-    { "start": 0.31, "end": 0.38, "value": "F" },
-    { "start": 0.38, "end": 0.45, "value": "C" },
-    { "start": 0.45, "end": 0.66, "value": "B" },
-    { "start": 0.66, "end": 1.09, "value": "X" },
-    { "start": 1.09, "end": 1.31, "value": "B" },
-    { "start": 1.31, "end": 1.45, "value": "F" },
-    { "start": 1.45, "end": 1.59, "value": "E" },
-    { "start": 1.59, "end": 1.73, "value": "F" },
-    { "start": 1.73, "end": 1.87, "value": "B" },
-    { "start": 1.87, "end": 2.01, "value": "E" },
-    { "start": 2.01, "end": 2.08, "value": "B" },
-    { "start": 2.08, "end": 2.15, "value": "H" },
-    { "start": 2.15, "end": 2.29, "value": "B" },
-    { "start": 2.29, "end": 2.43, "value": "E" },
-    { "start": 2.43, "end": 2.51, "value": "A" },
-    { "start": 2.51, "end": 2.65, "value": "D" },
-    { "start": 2.65, "end": 2.69, "value": "C" },
-    { "start": 2.69, "end": 3.16, "value": "B" },
-    { "start": 3.16, "end": 3.30, "value": "F" },
-    { "start": 3.30, "end": 3.37, "value": "B" },
-    { "start": 3.37, "end": 3.44, "value": "C" },
-    { "start": 3.44, "end": 3.58, "value": "B" },
-    { "start": 3.58, "end": 3.72, "value": "E" },
-    { "start": 3.72, "end": 4.07, "value": "B" },
-    { "start": 4.07, "end": 4.41, "value": "X" }
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.23, "value": "C" },
+    { "start": 0.23, "end": 0.72, "value": "B" },
+    { "start": 0.72, "end": 0.86, "value": "C" },
+    { "start": 0.86, "end": 1.07, "value": "E" },
+    { "start": 1.07, "end": 1.14, "value": "F" },
+    { "start": 1.14, "end": 1.48, "value": "X" }
   ]
 }

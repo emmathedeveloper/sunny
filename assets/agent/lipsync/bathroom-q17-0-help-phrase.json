@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "soundFile": "./assets/agent/audio/bathroom-q17-0-help-phrase.ogg",
+    "duration": 2.32
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.04, "value": "X" },
+    { "start": 0.04, "end": 0.24, "value": "C" },
+    { "start": 0.24, "end": 0.73, "value": "B" },
+    { "start": 0.73, "end": 0.94, "value": "H" },
+    { "start": 0.94, "end": 1.26, "value": "C" },
+    { "start": 1.26, "end": 1.42, "value": "B" },
+    { "start": 1.42, "end": 1.63, "value": "F" },
+    { "start": 1.63, "end": 1.70, "value": "B" },
+    { "start": 1.70, "end": 1.77, "value": "C" },
+    { "start": 1.77, "end": 1.84, "value": "B" },
+    { "start": 1.84, "end": 2.05, "value": "C" },
+    { "start": 2.05, "end": 2.26, "value": "B" },
+    { "start": 2.26, "end": 2.32, "value": "X" }
+  ]
+}

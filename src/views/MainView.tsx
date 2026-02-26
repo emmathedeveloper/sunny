@@ -312,8 +312,8 @@ const MainView = () => {
         } else {
             if (currentQuestion) {
 
-                //If a question has been failed two or more times, change the question
-                if (questionFailureCount >= 2) {
+                //If a question has been failed three or more times, change the question
+                if (questionFailureCount >= 3) {
 
                     //Let the child know they answered wrong and that we will move to the next question
                     await speak(`game-wrong-answer`, {

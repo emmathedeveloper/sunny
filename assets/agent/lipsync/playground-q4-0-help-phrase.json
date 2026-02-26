@@ -1,34 +1,24 @@
 {
   "metadata": {
-    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/playground-q4-0-help-phrase.ogg",
-    "duration": 3.90
+    "soundFile": "./assets/agent/audio/playground-q4-0-help-phrase.ogg",
+    "duration": 2.69
   },
   "mouthCues": [
     { "start": 0.00, "end": 0.05, "value": "X" },
-    { "start": 0.05, "end": 0.10, "value": "C" },
-    { "start": 0.10, "end": 0.15, "value": "D" },
-    { "start": 0.15, "end": 0.36, "value": "B" },
-    { "start": 0.36, "end": 0.43, "value": "F" },
-    { "start": 0.43, "end": 0.50, "value": "C" },
-    { "start": 0.50, "end": 0.99, "value": "B" },
-    { "start": 0.99, "end": 1.06, "value": "C" },
-    { "start": 1.06, "end": 1.48, "value": "B" },
-    { "start": 1.48, "end": 1.56, "value": "A" },
-    { "start": 1.56, "end": 1.83, "value": "B" },
+    { "start": 0.05, "end": 0.12, "value": "B" },
+    { "start": 0.12, "end": 0.18, "value": "C" },
+    { "start": 0.18, "end": 0.25, "value": "B" },
+    { "start": 0.25, "end": 0.51, "value": "D" },
+    { "start": 0.51, "end": 0.56, "value": "C" },
+    { "start": 0.56, "end": 0.74, "value": "B" },
+    { "start": 0.74, "end": 0.82, "value": "A" },
+    { "start": 0.82, "end": 1.27, "value": "F" },
+    { "start": 1.27, "end": 1.55, "value": "B" },
+    { "start": 1.55, "end": 1.69, "value": "F" },
+    { "start": 1.69, "end": 1.83, "value": "B" },
     { "start": 1.83, "end": 1.90, "value": "C" },
-    { "start": 1.90, "end": 2.18, "value": "D" },
-    { "start": 2.18, "end": 2.25, "value": "B" },
-    { "start": 2.25, "end": 2.32, "value": "E" },
-    { "start": 2.32, "end": 2.51, "value": "F" },
-    { "start": 2.51, "end": 2.70, "value": "B" },
-    { "start": 2.70, "end": 2.84, "value": "F" },
-    { "start": 2.84, "end": 2.91, "value": "B" },
-    { "start": 2.91, "end": 3.19, "value": "C" },
-    { "start": 3.19, "end": 3.26, "value": "E" },
-    { "start": 3.26, "end": 3.33, "value": "C" },
-    { "start": 3.33, "end": 3.40, "value": "B" },
-    { "start": 3.40, "end": 3.47, "value": "C" },
-    { "start": 3.47, "end": 3.54, "value": "H" },
-    { "start": 3.54, "end": 3.90, "value": "X" }
+    { "start": 1.90, "end": 1.98, "value": "A" },
+    { "start": 1.98, "end": 2.33, "value": "F" },
+    { "start": 2.33, "end": 2.69, "value": "X" }
   ]
 }
