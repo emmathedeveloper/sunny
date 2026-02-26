@@ -1,6 +1,6 @@
 import Avatar from '@/components/AnimatedAvatar/Avatar';
 import { useAvatarContext } from '@/components/AnimatedAvatar/AvatarContext';
-import { useGameContext } from '@/components/Rooms/GameContext';
+import { useGameContext, type RoomType } from '@/components/Rooms/GameContext';
 import LetterRoom from '@/components/Rooms/LetterRoom';
 import useAgentSpeechState from '@/hooks/useAgentSpeechState';
 import useAppWebSocket from '@/hooks/useAppWebSocket';
@@ -17,17 +17,22 @@ const MainView = () => {
     const {
         conversationPaused,
         setConversationPaused,
-        currentQuestionIndex,
-        setCurrentQuestionIndex,
         currentRoom,
         setCurrentRoom,
         questionFailureCount,
         setQuestionFailureCount,
         readyForNewRoom,
         setReadyForNewRoom,
-        questions,
-        setQuestions,
-        updateQuestions
+        failureStreak,
+        setFailureStreak,
+        correctStreak,
+        currentQuestion,
+        setCorrectStreak,
+        getNextQuestion,
+        correctCount,
+        setCorrectCount,
+        QUESTIONS_PER_ROOM,
+        resetForNextRoom
     } = useGameContext()
 
     const { playLose, playWin, pauseAudio, resumeAudio, startBackgroundMusic, init, toggleBackgroundMute, bgMuted } = useGameAudio({
@@ -166,10 +171,6 @@ const MainView = () => {
         }
     };
 
-    const handleSetAwaitingResponse = (value: boolean) => {
-        setAwaitingResponse(value);
-    }
-
     const handleWelcomeFlow = async (transcript: string) => {
         console.log("You said:", transcript);
 
@@ -217,13 +218,11 @@ const MainView = () => {
 
     const handleGameFlow = useCallback(async (transcript: string) => {
 
-        const currentQuestion = questions[currentQuestionIndex];
-
         const rooms = Object.keys(QUESTIONS)
 
         const isLastRoom = rooms.at(-1) == currentRoom
 
-        const isLastQuestion = currentQuestionIndex === questions.length - 1
+        const isLastQuestion = correctCount >= QUESTIONS_PER_ROOM - 1
 
         if (readyForNewRoom && !isLastRoom && userAgreed(transcript)) {
 
@@ -297,6 +296,9 @@ const MainView = () => {
                     setCurrentAnimation('thumbs_up')
                     playWin()
                     setAwaitingResponse(false)
+                    setCorrectCount(p => p + 1)
+                    setCorrectStreak(p => p + 1)
+                    setQuestionFailureCount(0)
                 },
                 onEnd() {
                     setTimeout(() => {
@@ -310,7 +312,26 @@ const MainView = () => {
         } else {
             if (currentQuestion) {
 
-                if (questionFailureCount >= 1) {
+                //If a question has been failed two or more times, change the question
+                if (questionFailureCount >= 2) {
+
+                    //Let the child know they answered wrong and that we will move to the next question
+                    await speak(`game-wrong-answer`, {
+                        onStart() {
+                            setCurrentAnimation('sad_idle')
+                            playLose()
+                            setQuestionFailureCount(0)
+
+                            //Increment the failure streak
+                            setFailureStreak(p => p + 1)
+                        },
+                        onEnd() {
+                            askNextQuestion()
+                        }
+                    })
+
+
+                } else if (questionFailureCount >= 1) {
                     await speak(`${currentRoom}-${currentQuestion.id}-${Math.floor(Math.random() * currentQuestion.helpPhrases.length)}-help-phrase`, {
                         onStart() {
                             setCurrentAnimation('sad_idle')
@@ -345,7 +366,7 @@ const MainView = () => {
         }
 
 
-    }, [currentRoom, currentQuestionIndex, questions, currentRoom, currentQuestionIndex, questions, readyForNewRoom, questionFailureCount, speak, playWin, playLose, setCurrentAnimation, setAwaitingResponse, setReadyForNewRoom, setQuestionFailureCount])
+    }, [currentRoom, currentQuestion, currentRoom, readyForNewRoom, questionFailureCount, speak, playWin, playLose, setCurrentAnimation, setAwaitingResponse, setReadyForNewRoom, setQuestionFailureCount])
 
     const handleSwitchToGameView = () => {
 
@@ -360,22 +381,13 @@ const MainView = () => {
         })
     }
 
-    const switchRoom = async (room: keyof typeof QUESTIONS) => {
-
-        let questions: QuestionType[]
-
-        if (room == 'letter') {
-
-            questions = updateQuestions(room)
-        } else {
-            questions = QUESTIONS[room]
-
-            setQuestions(QUESTIONS[room])
-        }
+    const switchRoom = async (room: RoomType) => {
 
         if (conversationPaused) return
 
-        const currentQuestion = questions[0];
+        resetForNextRoom();
+
+        const currentQuestion = getNextQuestion(room, []);
 
         if (currentQuestion) {
 
@@ -385,10 +397,8 @@ const MainView = () => {
                     setCurrentFlowState('game')
                     setCurrentRoom(room)
                     setReadyForNewRoom(false)
-                },
-                onEnd() {
-                    setCurrentQuestionIndex(0)
-                },
+                    setQuestionFailureCount(0)
+                }
             })
 
             await speak(`${room}-${currentQuestion.id}`, {
@@ -411,9 +421,11 @@ const MainView = () => {
 
     const resetRoom = async () => {
 
+        resetForNextRoom()
+
         const room = currentRoom
 
-        const currentQuestion = questions[0];
+        const currentQuestion = getNextQuestion(room, []);
 
         if (currentQuestion) {
 
@@ -422,9 +434,7 @@ const MainView = () => {
                     setCurrentAnimation('talking')
                     setConversationPaused(false)
                     setCurrentRoom(room)
-                },
-                onEnd() {
-                    setCurrentQuestionIndex(0)
+                    setQuestionFailureCount(0)
                 },
             })
 
@@ -449,8 +459,9 @@ const MainView = () => {
         setCurrentRoom("playground")
         setReadyForNewRoom(false)
         setAwaitingResponse(false)
-        setCurrentQuestionIndex(0)
         setCurrentAnimation('idle')
+        setQuestionFailureCount(0)
+        resetForNextRoom()
     }
 
     const resetActivity = () => {
@@ -506,14 +517,14 @@ const MainView = () => {
     }
 
     const askNextQuestion = async () => {
-        const nextQuestion = questions[currentQuestionIndex + 1]
+
+        const nextQuestion = getNextQuestion(currentRoom);
 
         if (!nextQuestion) return;
 
         await speak(`${currentRoom}-${nextQuestion.id}`, {
             onStart() {
                 setCurrentAnimation('talking')
-                setCurrentQuestionIndex(p => p + 1)
             },
             onEnd() {
                 if (currentRoom == 'letter') {
@@ -524,15 +535,6 @@ const MainView = () => {
                 }
             }
         })
-    }
-
-    const toggleMic = (enabled: boolean) => {
-        navigator.mediaDevices.getUserMedia({ audio: true })
-            .then(stream => {
-                stream.getAudioTracks().forEach(track => {
-                    track.enabled = false;
-                });
-            });
     }
 
     const calculateGameRoomTransition = (room: any) => {

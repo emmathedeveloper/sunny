@@ -1,18 +1,18 @@
 {
   "metadata": {
-    "soundFile": "./assets/agent/audio/bathroom-q7.ogg",
-    "duration": 1.85
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/bathroom-q7.ogg",
+    "duration": 1.53
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.04, "value": "X" },
-    { "start": 0.04, "end": 0.13, "value": "F" },
-    { "start": 0.13, "end": 0.41, "value": "B" },
-    { "start": 0.41, "end": 0.76, "value": "E" },
-    { "start": 0.76, "end": 0.83, "value": "B" },
-    { "start": 0.83, "end": 0.97, "value": "C" },
-    { "start": 0.97, "end": 1.11, "value": "B" },
-    { "start": 1.11, "end": 1.32, "value": "F" },
-    { "start": 1.32, "end": 1.47, "value": "A" },
-    { "start": 1.47, "end": 1.85, "value": "X" }
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.12, "value": "F" },
+    { "start": 0.12, "end": 0.19, "value": "C" },
+    { "start": 0.19, "end": 0.68, "value": "F" },
+    { "start": 0.68, "end": 0.75, "value": "B" },
+    { "start": 0.75, "end": 0.89, "value": "E" },
+    { "start": 0.89, "end": 0.97, "value": "A" },
+    { "start": 0.97, "end": 1.12, "value": "D" },
+    { "start": 1.12, "end": 1.40, "value": "B" },
+    { "start": 1.40, "end": 1.53, "value": "X" }
   ]
 }

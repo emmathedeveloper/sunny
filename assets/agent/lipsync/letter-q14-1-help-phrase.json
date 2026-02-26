@@ -1,26 +1,19 @@
 {
   "metadata": {
-    "soundFile": "./assets/agent/audio/letter-q14-1-help-phrase.ogg",
-    "duration": 2.73
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/letter-q14-1-help-phrase.ogg",
+    "duration": 2.08
   },
   "mouthCues": [
     { "start": 0.00, "end": 0.03, "value": "X" },
-    { "start": 0.03, "end": 0.07, "value": "C" },
-    { "start": 0.07, "end": 0.11, "value": "D" },
-    { "start": 0.11, "end": 0.32, "value": "B" },
-    { "start": 0.32, "end": 0.46, "value": "F" },
-    { "start": 0.46, "end": 0.67, "value": "B" },
-    { "start": 0.67, "end": 1.15, "value": "X" },
-    { "start": 1.15, "end": 1.29, "value": "B" },
-    { "start": 1.29, "end": 1.50, "value": "G" },
-    { "start": 1.50, "end": 1.57, "value": "C" },
-    { "start": 1.57, "end": 1.71, "value": "B" },
-    { "start": 1.71, "end": 1.78, "value": "C" },
-    { "start": 1.78, "end": 1.85, "value": "H" },
-    { "start": 1.85, "end": 1.89, "value": "E" },
-    { "start": 1.89, "end": 1.99, "value": "F" },
-    { "start": 1.99, "end": 2.27, "value": "B" },
-    { "start": 2.27, "end": 2.45, "value": "A" },
-    { "start": 2.45, "end": 2.73, "value": "X" }
+    { "start": 0.03, "end": 0.09, "value": "C" },
+    { "start": 0.09, "end": 0.29, "value": "B" },
+    { "start": 0.29, "end": 0.43, "value": "F" },
+    { "start": 0.43, "end": 0.82, "value": "B" },
+    { "start": 0.82, "end": 0.90, "value": "G" },
+    { "start": 0.90, "end": 0.97, "value": "C" },
+    { "start": 0.97, "end": 1.11, "value": "B" },
+    { "start": 1.11, "end": 1.60, "value": "C" },
+    { "start": 1.60, "end": 1.81, "value": "B" },
+    { "start": 1.81, "end": 2.08, "value": "X" }
   ]
 }

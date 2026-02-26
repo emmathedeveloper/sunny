@@ -129,12 +129,6 @@ export const QUESTIONS = {
             difficulty: DIFFICULTY.MEDIUM,
         },
         {
-            question: "Where do you go to take a bath?",
-            helpPhrases: ["Not quite!, you take a bath in a bathtub, can you say bathtub?"],
-            answers: ["bathtub", "bath tub", "bathroom tub"],
-            difficulty: DIFFICULTY.MEDIUM,
-        },
-        {
             question: "What is the girl standing on?",
             helpPhrases: ["Did i hear you say stool?"],
             answers: ["stool", "step stool"],
@@ -156,7 +150,7 @@ export const QUESTIONS = {
     "letter": "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((letter, i) => ({
         id: `q${i + 1}`,
         question: `Now find the letter ${letter}`,
-        difficulty: DIFFICULTY.EASY,
+        difficulty: i < 8 ? DIFFICULTY.EASY : i < 16 ? DIFFICULTY.MEDIUM : DIFFICULTY.HARD,
         helpPhrases: [
             `Try again! Look for ${letter}.`,
             `Not quite.Find the letter ${letter}.`,

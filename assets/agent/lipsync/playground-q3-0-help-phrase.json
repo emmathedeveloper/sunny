@@ -1,17 +1,16 @@
 {
   "metadata": {
-    "soundFile": "./assets/agent/audio/playground-q3-0-help-phrase.ogg",
-    "duration": 1.25
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/playground-q3-0-help-phrase.ogg",
+    "duration": 1.16
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.02, "value": "X" },
-    { "start": 0.02, "end": 0.11, "value": "B" },
-    { "start": 0.11, "end": 0.32, "value": "F" },
-    { "start": 0.32, "end": 0.39, "value": "B" },
-    { "start": 0.39, "end": 0.46, "value": "C" },
-    { "start": 0.46, "end": 0.54, "value": "A" },
-    { "start": 0.54, "end": 0.74, "value": "E" },
-    { "start": 0.74, "end": 0.95, "value": "F" },
-    { "start": 0.95, "end": 1.25, "value": "X" }
+    { "start": 0.00, "end": 0.07, "value": "X" },
+    { "start": 0.07, "end": 0.37, "value": "B" },
+    { "start": 0.37, "end": 0.44, "value": "C" },
+    { "start": 0.44, "end": 0.56, "value": "A" },
+    { "start": 0.56, "end": 0.61, "value": "B" },
+    { "start": 0.61, "end": 0.72, "value": "H" },
+    { "start": 0.72, "end": 0.86, "value": "B" },
+    { "start": 0.86, "end": 1.16, "value": "X" }
   ]
 }

@@ -1,17 +1,13 @@
 {
   "metadata": {
-    "soundFile": "./assets/agent/audio/game-wrong-answer.ogg",
-    "duration": 1.02
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/game-wrong-answer.ogg",
+    "duration": 1.06
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.04, "value": "X" },
-    { "start": 0.04, "end": 0.11, "value": "B" },
-    { "start": 0.11, "end": 0.18, "value": "C" },
-    { "start": 0.18, "end": 0.32, "value": "B" },
-    { "start": 0.32, "end": 0.39, "value": "D" },
-    { "start": 0.39, "end": 0.60, "value": "B" },
-    { "start": 0.60, "end": 0.67, "value": "C" },
-    { "start": 0.67, "end": 0.88, "value": "B" },
-    { "start": 0.88, "end": 1.02, "value": "X" }
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.56, "value": "B" },
+    { "start": 0.56, "end": 0.63, "value": "C" },
+    { "start": 0.63, "end": 0.77, "value": "B" },
+    { "start": 0.77, "end": 1.06, "value": "X" }
   ]
 }

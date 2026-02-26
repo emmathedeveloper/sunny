@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "soundFile": "/home/emmanuel/Desktop/projects/emmathedeveloper/jobs/sunny-revamped/./assets/agent/audio/playground-q8.ogg",
+    "duration": 1.76
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.05, "value": "X" },
+    { "start": 0.05, "end": 0.12, "value": "C" },
+    { "start": 0.12, "end": 0.18, "value": "E" },
+    { "start": 0.18, "end": 0.26, "value": "A" },
+    { "start": 0.26, "end": 0.33, "value": "C" },
+    { "start": 0.33, "end": 0.74, "value": "B" },
+    { "start": 0.74, "end": 1.02, "value": "F" },
+    { "start": 1.02, "end": 1.16, "value": "B" },
+    { "start": 1.16, "end": 1.37, "value": "C" },
+    { "start": 1.37, "end": 1.51, "value": "B" },
+    { "start": 1.51, "end": 1.76, "value": "X" }
+  ]
+}
