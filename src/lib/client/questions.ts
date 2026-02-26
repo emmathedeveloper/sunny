@@ -1,3 +1,17 @@
+export type QuestionType = {
+  id: string;
+  question: string;
+  helpPhrases: string[];
+  answers: string[];
+  difficulty: DIFFICULTY;
+};
+
+export enum DIFFICULTY {
+  EASY = "easy",
+  MEDIUM = "medium",
+  HARD = "hard",
+}
+
 export const ROOM_INTRO_MESSAGE = {
   playground: "Let's look at the playground",
   bathroom: "Let's look at the picture here.",
@@ -16,19 +30,12 @@ export const GENERAL_TEXT = {
   "play-more": "Wow! You did amazing! Great job! Do you want to play more?",
 };
 
-export type QuestionType = {
-  id: string;
-  question: string;
-  helpPhrases: string[];
-  answers: string[];
-  difficulty: DIFFICULTY;
+export const DIFFICULTY_TRANSITION_MESSAGES = {
+  "easy-to-medium": "Let's try some tougher questions.",
+  "medium-to-hard": "How about we switch it up a bit.",
+  "medium-to-easy": "Why don't we try an easier question?",
+  "hard-to-medium": "Let's try some simpler questions?",
 };
-
-export enum DIFFICULTY {
-  EASY,
-  MEDIUM,
-  HARD,
-}
 
 export const QUESTIONS = {
   playground: [
