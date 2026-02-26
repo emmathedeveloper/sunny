@@ -373,7 +373,7 @@ export const QUESTIONS = {
   letter: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((letter, i) => ({
     id: `q${i + 1}`,
     question: `Now find the letter ${letter}`,
-    difficulty: DIFFICULTY.EASY,
+    difficulty: i < 8 ? DIFFICULTY.EASY : i < 16 ? DIFFICULTY.MEDIUM : DIFFICULTY.HARD,
     helpPhrases: [
       `Try again! Look for ${letter}.`,
       `Not quite.Find the letter ${letter}.`,
