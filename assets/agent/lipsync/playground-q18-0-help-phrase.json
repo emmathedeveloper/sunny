@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "soundFile": "./assets/agent/audio/playground-q18-0-help-phrase.ogg",
+    "duration": 3.57
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.09, "value": "C" },
+    { "start": 0.09, "end": 0.14, "value": "D" },
+    { "start": 0.14, "end": 0.35, "value": "B" },
+    { "start": 0.35, "end": 0.42, "value": "F" },
+    { "start": 0.42, "end": 0.49, "value": "C" },
+    { "start": 0.49, "end": 0.63, "value": "B" },
+    { "start": 0.63, "end": 0.82, "value": "X" },
+    { "start": 0.82, "end": 1.09, "value": "B" },
+    { "start": 1.09, "end": 1.23, "value": "D" },
+    { "start": 1.23, "end": 1.44, "value": "B" },
+    { "start": 1.44, "end": 1.51, "value": "C" },
+    { "start": 1.51, "end": 1.93, "value": "B" },
+    { "start": 1.93, "end": 2.14, "value": "C" },
+    { "start": 2.14, "end": 2.48, "value": "B" },
+    { "start": 2.48, "end": 2.62, "value": "F" },
+    { "start": 2.62, "end": 2.69, "value": "B" },
+    { "start": 2.69, "end": 2.83, "value": "C" },
+    { "start": 2.83, "end": 2.97, "value": "B" },
+    { "start": 2.97, "end": 3.11, "value": "C" },
+    { "start": 3.11, "end": 3.18, "value": "E" },
+    { "start": 3.18, "end": 3.32, "value": "B" },
+    { "start": 3.32, "end": 3.57, "value": "X" }
+  ]
+}

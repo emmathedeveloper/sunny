@@ -1,16 +1,17 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q8-2-help-phrase.ogg",
-    "duration": 1.43
+    "duration": 1.39
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.02, "value": "X" },
-    { "start": 0.02, "end": 0.16, "value": "B" },
-    { "start": 0.16, "end": 0.27, "value": "A" },
-    { "start": 0.27, "end": 0.61, "value": "B" },
-    { "start": 0.61, "end": 0.69, "value": "A" },
-    { "start": 0.69, "end": 0.87, "value": "C" },
-    { "start": 0.87, "end": 1.15, "value": "B" },
-    { "start": 1.15, "end": 1.43, "value": "X" }
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.12, "value": "B" },
+    { "start": 0.12, "end": 0.20, "value": "A" },
+    { "start": 0.20, "end": 0.31, "value": "F" },
+    { "start": 0.31, "end": 0.66, "value": "B" },
+    { "start": 0.66, "end": 0.74, "value": "A" },
+    { "start": 0.74, "end": 0.94, "value": "C" },
+    { "start": 0.94, "end": 1.22, "value": "B" },
+    { "start": 1.22, "end": 1.39, "value": "X" }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "soundFile": "./assets/agent/audio/playground-q22.ogg",
+    "duration": 1.43
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.06, "value": "X" },
+    { "start": 0.06, "end": 0.12, "value": "F" },
+    { "start": 0.12, "end": 0.67, "value": "B" },
+    { "start": 0.67, "end": 0.75, "value": "A" },
+    { "start": 0.75, "end": 0.91, "value": "E" },
+    { "start": 0.91, "end": 1.12, "value": "H" },
+    { "start": 1.12, "end": 1.43, "value": "X" }
+  ]
+}

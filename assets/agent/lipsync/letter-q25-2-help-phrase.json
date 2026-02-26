@@ -1,18 +1,17 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q25-2-help-phrase.ogg",
-    "duration": 1.48
+    "duration": 1.30
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.02, "value": "X" },
-    { "start": 0.02, "end": 0.12, "value": "B" },
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.12, "value": "B" },
     { "start": 0.12, "end": 0.20, "value": "A" },
-    { "start": 0.20, "end": 0.34, "value": "F" },
-    { "start": 0.34, "end": 0.62, "value": "B" },
-    { "start": 0.62, "end": 0.76, "value": "E" },
-    { "start": 0.76, "end": 0.90, "value": "F" },
-    { "start": 0.90, "end": 1.04, "value": "D" },
-    { "start": 1.04, "end": 1.18, "value": "B" },
-    { "start": 1.18, "end": 1.48, "value": "X" }
+    { "start": 0.20, "end": 0.30, "value": "F" },
+    { "start": 0.30, "end": 0.44, "value": "B" },
+    { "start": 0.44, "end": 0.79, "value": "F" },
+    { "start": 0.79, "end": 0.93, "value": "D" },
+    { "start": 0.93, "end": 1.07, "value": "B" },
+    { "start": 1.07, "end": 1.30, "value": "X" }
   ]
 }

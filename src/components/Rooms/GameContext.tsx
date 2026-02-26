@@ -1,11 +1,19 @@
 import { DIFFICULTY, QUESTIONS, type QuestionType } from "@/lib/client/questions";
-import { createContext, useContext, useEffect, useState, type Dispatch, type ReactNode, type SetStateAction } from "react";
+import { createContext, useCallback, useContext, useEffect, useState, type Dispatch, type ReactNode, type SetStateAction } from "react";
 
-type RoomType = keyof typeof QUESTIONS
+export type RoomType = keyof typeof QUESTIONS
 
 type GameContextType = {
+    currentQuestion: QuestionType | null,
+    setCurrentQuestion: Dispatch<SetStateAction<QuestionType | null>>
     currentQuestionIndex: number,
     setCurrentQuestionIndex: Dispatch<SetStateAction<number>>,
+    failureStreak: number,
+    setFailureStreak: Dispatch<SetStateAction<number>>,
+    correctStreak: number,
+    setCorrectStreak: Dispatch<SetStateAction<number>>,
+    correctCount: number,
+    setCorrectCount: Dispatch<SetStateAction<number>>,
     currentRoom: RoomType,
     setCurrentRoom: Dispatch<SetStateAction<RoomType>>,
     readyForNewRoom: boolean,
@@ -18,6 +26,8 @@ type GameContextType = {
     setQuestions: Dispatch<SetStateAction<QuestionType[]>>,
     updateQuestions: (room: RoomType) => QuestionType[],
     QUESTIONS_PER_ROOM: number,
+    getNextQuestion: (room: RoomType, excludeAsked?: string[]) => QuestionType | undefined,
+    resetForNextRoom: () => void
 }
 
 export const GameContext = createContext({} as GameContextType)
@@ -58,7 +68,7 @@ export const GameProvider = ({ children }: { children?: ReactNode }) => {
 
     const [questions, setQuestions] = useState<QuestionType[]>([])
 
-    const QUESTIONS_PER_ROOM = 9;
+    const QUESTIONS_PER_ROOM = 5;
 
     const updateQuestions = (room: RoomType) => {
         // Pick 6 random letters including target
@@ -72,13 +82,40 @@ export const GameProvider = ({ children }: { children?: ReactNode }) => {
         return questions
     }
 
-    const getNextQuestion = () => {
+    const getNextQuestion = useCallback((room?: RoomType, excludeAsked?: string[]) => {
+        const roomToUse = room ?? currentRoom;
+        const askedToUse = excludeAsked ?? askedQuestions;
 
-        const found = QUESTIONS[currentRoom].find(q => !askedQuestions.includes(q.id) && q.difficulty === difficulty)
 
-        setCurrentQuestion(found || null)
+        if (currentQuestion) {
+            setAskedQuestions(p => ([...p, currentQuestion.id]))
+        }
+
+        const found = QUESTIONS[roomToUse].find(
+            q => !askedToUse.includes(q.id) &&
+                q.difficulty === difficulty &&
+                q.id !== currentQuestion?.id
+        )
+
+        if (found) {
+            setCurrentQuestion({ ...found })
+        } else {
+            setCurrentQuestion(null)
+        }
 
         return found
+    }, [currentRoom, askedQuestions, difficulty, currentQuestion, setAskedQuestions, setCurrentQuestion])
+
+    const resetForNextRoom = () => {
+        setAskedQuestions([])
+        setCurrentQuestion(null)
+        setCurrentQuestionIndex(0)
+        setFailureStreak(0)
+        setCorrectStreak(0)
+        setDifficulty(DIFFICULTY.MEDIUM)
+        setCorrectCount(0)
+
+        console.log("Resetting for next room")
     }
 
     //Reset failure count whenever we have a new question
@@ -88,8 +125,10 @@ export const GameProvider = ({ children }: { children?: ReactNode }) => {
 
     useEffect(() => {
 
-        if(failureStreak > 0) setCorrectStreak(0)
+        //Once a question is failed, reset correct streak
+        if (failureStreak > 0) setCorrectStreak(0)
 
+        //Reduce difficulty if child has failed two questions in a row
         if (failureStreak >= 2) {
             switch (difficulty) {
                 case DIFFICULTY.EASY:
@@ -103,12 +142,14 @@ export const GameProvider = ({ children }: { children?: ReactNode }) => {
                     break;
             }
         }
-    }, [failureStreak , setCorrectStreak])
+    }, [failureStreak, setCorrectStreak])
 
     useEffect(() => {
 
-        if(correctStreak > 0) setFailureStreak(0)
+        //Once a question is passed, reset failure streak
+        if (correctStreak > 0) setFailureStreak(0)
 
+        //Increase difficulty if child has passed two questions in a row
         if (correctStreak >= 2) {
             switch (difficulty) {
                 case DIFFICULTY.EASY:
@@ -122,10 +163,11 @@ export const GameProvider = ({ children }: { children?: ReactNode }) => {
                     break;
             }
         }
-    }, [correctStreak , setCorrectStreak])
+    }, [correctStreak, setCorrectStreak])
 
     return (
         <GameContext.Provider value={{
+            QUESTIONS_PER_ROOM,
             readyForNewRoom,
             setReadyForNewRoom,
             currentQuestionIndex,
@@ -137,9 +179,18 @@ export const GameProvider = ({ children }: { children?: ReactNode }) => {
             conversationPaused,
             setConversationPaused,
             questions,
+            currentQuestion,
+            setCurrentQuestion,
             setQuestions,
             updateQuestions,
-            QUESTIONS_PER_ROOM
+            failureStreak,
+            setFailureStreak,
+            correctStreak,
+            setCorrectStreak,
+            getNextQuestion,
+            correctCount,
+            setCorrectCount,
+            resetForNextRoom
         }}>
             {children}
         </GameContext.Provider>

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "soundFile": "./assets/agent/audio/bathroom-q26.ogg",
+    "duration": 1.57
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.05, "value": "X" },
+    { "start": 0.05, "end": 0.37, "value": "F" },
+    { "start": 0.37, "end": 0.44, "value": "B" },
+    { "start": 0.44, "end": 0.51, "value": "F" },
+    { "start": 0.51, "end": 0.58, "value": "D" },
+    { "start": 0.58, "end": 0.65, "value": "B" },
+    { "start": 0.65, "end": 0.79, "value": "D" },
+    { "start": 0.79, "end": 1.14, "value": "C" },
+    { "start": 1.14, "end": 1.28, "value": "B" },
+    { "start": 1.28, "end": 1.57, "value": "X" }
+  ]
+}

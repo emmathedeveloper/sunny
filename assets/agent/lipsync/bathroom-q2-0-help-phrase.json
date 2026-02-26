@@ -1,27 +1,27 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/bathroom-q2-0-help-phrase.ogg",
-    "duration": 2.64
+    "duration": 2.83
   },
   "mouthCues": [
     { "start": 0.00, "end": 0.03, "value": "X" },
-    { "start": 0.03, "end": 0.10, "value": "C" },
-    { "start": 0.10, "end": 0.24, "value": "E" },
-    { "start": 0.24, "end": 0.38, "value": "F" },
-    { "start": 0.38, "end": 0.52, "value": "B" },
-    { "start": 0.52, "end": 0.73, "value": "E" },
-    { "start": 0.73, "end": 0.87, "value": "B" },
-    { "start": 0.87, "end": 0.98, "value": "A" },
-    { "start": 0.98, "end": 1.05, "value": "B" },
-    { "start": 1.05, "end": 1.11, "value": "C" },
-    { "start": 1.11, "end": 1.25, "value": "B" },
-    { "start": 1.25, "end": 1.46, "value": "C" },
-    { "start": 1.46, "end": 1.60, "value": "F" },
-    { "start": 1.60, "end": 1.74, "value": "B" },
-    { "start": 1.74, "end": 1.81, "value": "C" },
-    { "start": 1.81, "end": 1.93, "value": "A" },
-    { "start": 1.93, "end": 2.20, "value": "B" },
-    { "start": 2.20, "end": 2.28, "value": "A" },
-    { "start": 2.28, "end": 2.64, "value": "X" }
+    { "start": 0.03, "end": 0.11, "value": "C" },
+    { "start": 0.11, "end": 0.25, "value": "E" },
+    { "start": 0.25, "end": 0.32, "value": "F" },
+    { "start": 0.32, "end": 0.39, "value": "B" },
+    { "start": 0.39, "end": 0.67, "value": "E" },
+    { "start": 0.67, "end": 0.81, "value": "B" },
+    { "start": 0.81, "end": 0.93, "value": "A" },
+    { "start": 0.93, "end": 0.99, "value": "B" },
+    { "start": 0.99, "end": 1.04, "value": "C" },
+    { "start": 1.04, "end": 1.64, "value": "B" },
+    { "start": 1.64, "end": 1.78, "value": "F" },
+    { "start": 1.78, "end": 1.85, "value": "B" },
+    { "start": 1.85, "end": 1.92, "value": "C" },
+    { "start": 1.92, "end": 2.06, "value": "A" },
+    { "start": 2.06, "end": 2.10, "value": "B" },
+    { "start": 2.10, "end": 2.21, "value": "C" },
+    { "start": 2.21, "end": 2.49, "value": "B" },
+    { "start": 2.49, "end": 2.83, "value": "X" }
   ]
 }

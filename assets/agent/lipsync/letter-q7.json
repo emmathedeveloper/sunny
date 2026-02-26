@@ -1,18 +1,17 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q7.ogg",
-    "duration": 1.48
+    "duration": 1.39
   },
   "mouthCues": [
     { "start": 0.00, "end": 0.05, "value": "X" },
-    { "start": 0.05, "end": 0.19, "value": "C" },
-    { "start": 0.19, "end": 0.33, "value": "G" },
-    { "start": 0.33, "end": 0.40, "value": "C" },
-    { "start": 0.40, "end": 0.54, "value": "B" },
-    { "start": 0.54, "end": 0.61, "value": "C" },
-    { "start": 0.61, "end": 0.75, "value": "B" },
-    { "start": 0.75, "end": 0.89, "value": "C" },
-    { "start": 0.89, "end": 1.24, "value": "B" },
-    { "start": 1.24, "end": 1.48, "value": "X" }
+    { "start": 0.05, "end": 0.16, "value": "C" },
+    { "start": 0.16, "end": 0.23, "value": "E" },
+    { "start": 0.23, "end": 0.37, "value": "G" },
+    { "start": 0.37, "end": 0.44, "value": "C" },
+    { "start": 0.44, "end": 0.89, "value": "B" },
+    { "start": 0.89, "end": 0.94, "value": "C" },
+    { "start": 0.94, "end": 1.29, "value": "B" },
+    { "start": 1.29, "end": 1.39, "value": "X" }
   ]
 }

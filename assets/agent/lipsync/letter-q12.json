@@ -1,19 +1,18 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q12.ogg",
-    "duration": 1.57
+    "duration": 1.53
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.04, "value": "X" },
-    { "start": 0.04, "end": 0.11, "value": "C" },
-    { "start": 0.11, "end": 0.18, "value": "E" },
-    { "start": 0.18, "end": 0.25, "value": "F" },
+    { "start": 0.00, "end": 0.05, "value": "X" },
+    { "start": 0.05, "end": 0.18, "value": "C" },
+    { "start": 0.18, "end": 0.25, "value": "E" },
     { "start": 0.25, "end": 0.39, "value": "G" },
     { "start": 0.39, "end": 0.60, "value": "B" },
-    { "start": 0.60, "end": 0.67, "value": "H" },
-    { "start": 0.67, "end": 0.74, "value": "E" },
-    { "start": 0.74, "end": 0.88, "value": "F" },
-    { "start": 0.88, "end": 1.23, "value": "B" },
-    { "start": 1.23, "end": 1.57, "value": "X" }
+    { "start": 0.60, "end": 0.93, "value": "F" },
+    { "start": 0.93, "end": 0.97, "value": "E" },
+    { "start": 0.97, "end": 1.11, "value": "C" },
+    { "start": 1.11, "end": 1.32, "value": "H" },
+    { "start": 1.32, "end": 1.53, "value": "X" }
   ]
 }

@@ -1,17 +1,18 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q3-0-help-phrase.ogg",
-    "duration": 1.85
+    "duration": 1.99
   },
   "mouthCues": [
     { "start": 0.00, "end": 0.02, "value": "X" },
-    { "start": 0.02, "end": 0.20, "value": "B" },
-    { "start": 0.20, "end": 0.69, "value": "C" },
-    { "start": 0.69, "end": 0.89, "value": "B" },
-    { "start": 0.89, "end": 0.91, "value": "A" },
-    { "start": 0.91, "end": 0.99, "value": "C" },
-    { "start": 0.99, "end": 1.07, "value": "A" },
-    { "start": 1.07, "end": 1.60, "value": "B" },
-    { "start": 1.60, "end": 1.85, "value": "X" }
+    { "start": 0.02, "end": 0.19, "value": "B" },
+    { "start": 0.19, "end": 0.26, "value": "C" },
+    { "start": 0.26, "end": 0.33, "value": "B" },
+    { "start": 0.33, "end": 0.87, "value": "C" },
+    { "start": 0.87, "end": 0.92, "value": "E" },
+    { "start": 0.92, "end": 1.10, "value": "F" },
+    { "start": 1.10, "end": 1.31, "value": "E" },
+    { "start": 1.31, "end": 1.73, "value": "B" },
+    { "start": 1.73, "end": 1.99, "value": "X" }
   ]
 }

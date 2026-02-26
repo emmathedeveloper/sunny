@@ -1,17 +1,17 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q5-0-help-phrase.ogg",
-    "duration": 1.67
+    "duration": 1.90
   },
   "mouthCues": [
     { "start": 0.00, "end": 0.03, "value": "X" },
-    { "start": 0.03, "end": 0.15, "value": "B" },
-    { "start": 0.15, "end": 0.22, "value": "C" },
-    { "start": 0.22, "end": 0.29, "value": "B" },
-    { "start": 0.29, "end": 0.75, "value": "C" },
-    { "start": 0.75, "end": 0.87, "value": "F" },
-    { "start": 0.87, "end": 0.95, "value": "A" },
-    { "start": 0.95, "end": 1.39, "value": "B" },
-    { "start": 1.39, "end": 1.67, "value": "X" }
+    { "start": 0.03, "end": 0.21, "value": "B" },
+    { "start": 0.21, "end": 0.28, "value": "C" },
+    { "start": 0.28, "end": 0.35, "value": "B" },
+    { "start": 0.35, "end": 0.77, "value": "C" },
+    { "start": 0.77, "end": 0.90, "value": "B" },
+    { "start": 0.90, "end": 1.01, "value": "F" },
+    { "start": 1.01, "end": 1.57, "value": "B" },
+    { "start": 1.57, "end": 1.90, "value": "X" }
   ]
 }

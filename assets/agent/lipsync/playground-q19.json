@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "soundFile": "./assets/agent/audio/playground-q19.ogg",
+    "duration": 2.41
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.13, "value": "F" },
+    { "start": 0.13, "end": 0.20, "value": "C" },
+    { "start": 0.20, "end": 0.48, "value": "B" },
+    { "start": 0.48, "end": 0.76, "value": "E" },
+    { "start": 0.76, "end": 1.11, "value": "B" },
+    { "start": 1.11, "end": 1.25, "value": "C" },
+    { "start": 1.25, "end": 1.33, "value": "A" },
+    { "start": 1.33, "end": 1.47, "value": "D" },
+    { "start": 1.47, "end": 1.61, "value": "B" },
+    { "start": 1.61, "end": 1.75, "value": "F" },
+    { "start": 1.75, "end": 1.82, "value": "C" },
+    { "start": 1.82, "end": 2.10, "value": "B" },
+    { "start": 2.10, "end": 2.41, "value": "X" }
+  ]
+}

@@ -1,36 +1,20 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/playground-q1-0-help-phrase.ogg",
-    "duration": 3.99
+    "duration": 2.32
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.04, "value": "X" },
-    { "start": 0.04, "end": 0.11, "value": "C" },
-    { "start": 0.11, "end": 0.32, "value": "B" },
-    { "start": 0.32, "end": 0.39, "value": "F" },
-    { "start": 0.39, "end": 0.46, "value": "C" },
-    { "start": 0.46, "end": 0.60, "value": "B" },
-    { "start": 0.60, "end": 1.00, "value": "X" },
-    { "start": 1.00, "end": 1.05, "value": "B" },
-    { "start": 1.05, "end": 1.10, "value": "C" },
-    { "start": 1.10, "end": 1.24, "value": "B" },
-    { "start": 1.24, "end": 1.31, "value": "G" },
-    { "start": 1.31, "end": 1.45, "value": "E" },
-    { "start": 1.45, "end": 1.94, "value": "B" },
-    { "start": 1.94, "end": 2.02, "value": "A" },
-    { "start": 2.02, "end": 2.12, "value": "H" },
-    { "start": 2.12, "end": 2.19, "value": "C" },
-    { "start": 2.19, "end": 2.33, "value": "B" },
-    { "start": 2.33, "end": 2.40, "value": "C" },
-    { "start": 2.40, "end": 2.54, "value": "B" },
-    { "start": 2.54, "end": 2.71, "value": "X" },
-    { "start": 2.71, "end": 2.91, "value": "B" },
-    { "start": 2.91, "end": 3.05, "value": "F" },
-    { "start": 3.05, "end": 3.12, "value": "B" },
-    { "start": 3.12, "end": 3.19, "value": "C" },
-    { "start": 3.19, "end": 3.26, "value": "B" },
-    { "start": 3.26, "end": 3.40, "value": "G" },
-    { "start": 3.40, "end": 3.61, "value": "E" },
-    { "start": 3.61, "end": 3.99, "value": "X" }
+    { "start": 0.00, "end": 0.11, "value": "X" },
+    { "start": 0.11, "end": 0.35, "value": "B" },
+    { "start": 0.35, "end": 0.42, "value": "G" },
+    { "start": 0.42, "end": 0.56, "value": "E" },
+    { "start": 0.56, "end": 1.44, "value": "B" },
+    { "start": 1.44, "end": 1.58, "value": "F" },
+    { "start": 1.58, "end": 1.72, "value": "B" },
+    { "start": 1.72, "end": 1.79, "value": "C" },
+    { "start": 1.79, "end": 1.86, "value": "B" },
+    { "start": 1.86, "end": 1.93, "value": "G" },
+    { "start": 1.93, "end": 2.21, "value": "E" },
+    { "start": 2.21, "end": 2.32, "value": "X" }
   ]
 }

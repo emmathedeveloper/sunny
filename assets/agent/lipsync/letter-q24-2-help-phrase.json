@@ -1,17 +1,18 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q24-2-help-phrase.ogg",
-    "duration": 1.39
+    "duration": 1.43
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.03, "value": "X" },
-    { "start": 0.03, "end": 0.12, "value": "B" },
-    { "start": 0.12, "end": 0.20, "value": "A" },
-    { "start": 0.20, "end": 0.33, "value": "F" },
-    { "start": 0.33, "end": 0.54, "value": "B" },
-    { "start": 0.54, "end": 0.61, "value": "G" },
-    { "start": 0.61, "end": 0.82, "value": "C" },
-    { "start": 0.82, "end": 1.10, "value": "B" },
-    { "start": 1.10, "end": 1.39, "value": "X" }
+    { "start": 0.00, "end": 0.02, "value": "X" },
+    { "start": 0.02, "end": 0.13, "value": "B" },
+    { "start": 0.13, "end": 0.21, "value": "A" },
+    { "start": 0.21, "end": 0.31, "value": "F" },
+    { "start": 0.31, "end": 0.59, "value": "B" },
+    { "start": 0.59, "end": 0.66, "value": "G" },
+    { "start": 0.66, "end": 0.76, "value": "E" },
+    { "start": 0.76, "end": 0.94, "value": "C" },
+    { "start": 0.94, "end": 1.15, "value": "B" },
+    { "start": 1.15, "end": 1.43, "value": "X" }
   ]
 }

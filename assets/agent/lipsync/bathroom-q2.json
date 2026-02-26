@@ -1,16 +1,15 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/bathroom-q2.ogg",
-    "duration": 1.25
+    "duration": 1.62
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.05, "value": "X" },
-    { "start": 0.05, "end": 0.13, "value": "F" },
-    { "start": 0.13, "end": 0.41, "value": "B" },
-    { "start": 0.41, "end": 0.62, "value": "C" },
-    { "start": 0.62, "end": 0.69, "value": "H" },
-    { "start": 0.69, "end": 0.90, "value": "E" },
-    { "start": 0.90, "end": 1.11, "value": "B" },
-    { "start": 1.11, "end": 1.25, "value": "X" }
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.16, "value": "F" },
+    { "start": 0.16, "end": 0.44, "value": "B" },
+    { "start": 0.44, "end": 0.72, "value": "E" },
+    { "start": 0.72, "end": 1.00, "value": "F" },
+    { "start": 1.00, "end": 1.28, "value": "B" },
+    { "start": 1.28, "end": 1.62, "value": "X" }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "soundFile": "./assets/agent/audio/playground-q18.ogg",
+    "duration": 1.39
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.15, "value": "F" },
+    { "start": 0.15, "end": 0.36, "value": "B" },
+    { "start": 0.36, "end": 0.43, "value": "C" },
+    { "start": 0.43, "end": 0.92, "value": "B" },
+    { "start": 0.92, "end": 1.13, "value": "C" },
+    { "start": 1.13, "end": 1.27, "value": "B" },
+    { "start": 1.27, "end": 1.39, "value": "X" }
+  ]
+}

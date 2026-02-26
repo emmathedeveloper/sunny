@@ -17,7 +17,7 @@ type LetterRoomProps = {
 
 const LetterRoom = ({ onLetterClicked } : LetterRoomProps) => {
 
-    const { questions , currentRoom ,currentQuestionIndex } = useGameContext()
+    const { questions , currentRoom , currentQuestion } = useGameContext()
 
     const { speak , agentIsSpeaking } = useAgentSpeechState()
 
@@ -45,7 +45,7 @@ const LetterRoom = ({ onLetterClicked } : LetterRoomProps) => {
         // Pick 6 random letters including target
         const availableLetters = ALL_LETTERS.filter(l => l !== currentTarget);
         const shuffled = [...availableLetters].sort(() => Math.random() - 0.5);
-        const randomLetters = shuffled.slice(0, 5);
+        const randomLetters = shuffled.slice(0, 4);
         const letters = [currentTarget , ...randomLetters].sort(() => Math.random() - 0.5)
 
         console.log("Letters: " , letters)
@@ -157,7 +157,7 @@ const LetterRoom = ({ onLetterClicked } : LetterRoomProps) => {
 
     useEffect(() => {
         if(currentRoom == 'letter') {
-            const target = questions[currentQuestionIndex]?.answers[0]
+            const target = currentQuestion?.answers[0]
             setTargetLetter(target as string)
             generateBubbles(target)
         }else{
@@ -168,7 +168,7 @@ const LetterRoom = ({ onLetterClicked } : LetterRoomProps) => {
             setHasBubblePopped(false)
         }
 
-    } , [currentRoom , questions , currentQuestionIndex])
+    } , [currentRoom , currentQuestion , generateBubbles])
 
     useEffect(() => {
         setHasBubblePopped(agentIsSpeaking)

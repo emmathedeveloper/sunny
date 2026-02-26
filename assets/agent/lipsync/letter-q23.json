@@ -1,18 +1,21 @@
 {
   "metadata": {
     "soundFile": "./assets/agent/audio/letter-q23.ogg",
-    "duration": 1.57
+    "duration": 1.53
   },
   "mouthCues": [
-    { "start": 0.00, "end": 0.11, "value": "X" },
-    { "start": 0.11, "end": 0.26, "value": "B" },
-    { "start": 0.26, "end": 0.33, "value": "G" },
-    { "start": 0.33, "end": 0.40, "value": "C" },
-    { "start": 0.40, "end": 0.61, "value": "B" },
-    { "start": 0.61, "end": 0.75, "value": "C" },
-    { "start": 0.75, "end": 0.82, "value": "B" },
-    { "start": 0.82, "end": 1.24, "value": "C" },
-    { "start": 1.24, "end": 1.38, "value": "B" },
-    { "start": 1.38, "end": 1.57, "value": "X" }
+    { "start": 0.00, "end": 0.06, "value": "X" },
+    { "start": 0.06, "end": 0.10, "value": "C" },
+    { "start": 0.10, "end": 0.14, "value": "D" },
+    { "start": 0.14, "end": 0.21, "value": "B" },
+    { "start": 0.21, "end": 0.28, "value": "G" },
+    { "start": 0.28, "end": 0.35, "value": "C" },
+    { "start": 0.35, "end": 0.49, "value": "B" },
+    { "start": 0.49, "end": 0.63, "value": "C" },
+    { "start": 0.63, "end": 0.77, "value": "B" },
+    { "start": 0.77, "end": 0.91, "value": "C" },
+    { "start": 0.91, "end": 1.00, "value": "A" },
+    { "start": 1.00, "end": 1.27, "value": "F" },
+    { "start": 1.27, "end": 1.53, "value": "X" }
   ]
 }
