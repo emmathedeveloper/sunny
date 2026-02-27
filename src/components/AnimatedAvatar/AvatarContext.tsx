@@ -57,13 +57,6 @@ const AvatarProvider = ({ children }: { children?: ReactNode }) => {
 
     const speechStartTimeRef = useRef<number>(0);
 
-    const scene = useRef<Scene | null>(null)
-
-    useEffect(() => {
-
-    } , []);
-
-
     return (
         <AvatarContext.Provider value={{
             isLoadingAvatar,

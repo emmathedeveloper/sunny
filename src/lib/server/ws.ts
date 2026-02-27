@@ -1,8 +1,3 @@
-// import Groq from "groq-sdk";
-
-import { createAudioStreamFromText } from "./tts";
-
-
 export const upgradeConnection = (req: Request, server: Bun.Server<undefined>) => {
     const upgraded = server.upgrade(req);
 
@@ -34,8 +29,4 @@ async function handleTextMessage(ws: Bun.ServerWebSocket, message: string) {
 
 async function handleAudioMessage(ws: Bun.ServerWebSocket, message: Buffer) {
     const audio = new Int16Array(message);
-
-    console.log("Received audio samples:", audio.length);
-
-    // ws.send(JSON.stringify({ type: "transcription_result", transcription }));
 }

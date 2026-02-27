@@ -34,14 +34,12 @@ export default function useAgentSpeechState() {
         return new Promise<any>(async (res, rej) => {
             try {
 
-                // Stop any currently playing audio
                 if (sourceRef.current) {
                     sourceRef.current.stop();
                     sourceRef.current.disconnect();
                     sourceRef.current = null;
                 }
 
-                // Set agent as speaking while audio plays
                 setAgentIsSpeaking(true);
 
                 if (!audioContextRef.current) {
@@ -73,7 +71,6 @@ export default function useAgentSpeechState() {
 
                 callbacks?.onStart?.()
 
-                // Calculate duration and set agent as not speaking when done
                 const duration = decodedAudio.duration * 1000;
                 setTimeout(() => {
                     setAgentIsSpeaking(false);

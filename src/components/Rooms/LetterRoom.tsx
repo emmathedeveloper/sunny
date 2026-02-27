@@ -1,5 +1,5 @@
 import useAgentSpeechState from '@/hooks/useAgentSpeechState';
-import React, { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useGameContext } from './GameContext';
 
 interface Bubble {
@@ -19,7 +19,7 @@ const LetterRoom = ({ onLetterClicked } : LetterRoomProps) => {
 
     const { questions , currentRoom , currentQuestion } = useGameContext()
 
-    const { speak , agentIsSpeaking } = useAgentSpeechState()
+    const { agentIsSpeaking } = useAgentSpeechState()
 
     const [bubbles, setBubbles] = useState<Bubble[]>([]);
     const [hasBubblePopped, setHasBubblePopped] = useState(false);
@@ -27,28 +27,20 @@ const LetterRoom = ({ onLetterClicked } : LetterRoomProps) => {
     const [correctAnswersCount, setCorrectAnswersCount] = useState(0);
     const [askedLetters, setAskedLetters] = useState<string[]>([]);
 
-    // All letters A-Z plus Swedish letters Å, Ä, Ö
     const ALL_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ".split("");
 
     const generateBubbles = useCallback((letterToUse?: string) => {
         const currentTarget = letterToUse;
-
-        // console.log("Target: " , currentTarget , questions)
 
         if (!currentTarget) {
             console.warn('⚠️ No target letter provided to generateBubbles');
             return;
         }
 
-        console.log('🎨 Generating bubbles with target letter:', currentTarget);
-
-        // Pick 6 random letters including target
         const availableLetters = ALL_LETTERS.filter(l => l !== currentTarget);
         const shuffled = [...availableLetters].sort(() => Math.random() - 0.5);
         const randomLetters = shuffled.slice(0, 4);
         const letters = [currentTarget , ...randomLetters].sort(() => Math.random() - 0.5)
-
-        console.log("Letters: " , letters)
 
         const colorClasses = ["text-red-500", "text-blue-500", "text-green-500", "text-yellow-500", "text-orange-500", "text-purple-500"];
         const floatDelays = ["", "delay-1", "delay-2", "delay-3", "delay-4", "delay-5"];
@@ -110,46 +102,27 @@ const LetterRoom = ({ onLetterClicked } : LetterRoomProps) => {
     }, [currentRoom]);
 
     const handleBubbleClick = useCallback(async (letter: string, bubbleId: string) => {
-        console.log('🫧 Bubble clicked:', letter);
 
         setHasBubblePopped(true);
 
-        // Remove the clicked bubble
         setBubbles(prev => prev.filter(b => b.id !== bubbleId));
 
-        // Check if correct
         const isCorrectAnswer = letter === targetLetter;
 
         onLetterClicked(letter)
 
         if (isCorrectAnswer) {
-            // Correct answer - praise with talking animation
-
-            // Increment correct answers
             const newCount = correctAnswersCount + 1;
             setCorrectAnswersCount(newCount);
-            console.log('✅ Correct answers:', newCount);
 
             if (newCount >= questions.length) {
-                // Game complete
-                console.log('🎉 Game complete! 10 correct answers');
             } else {
-                // Pick next letter
-                // const availableLetters = ALL_LETTERS.filter(l => !askedLetters.includes(l));
-                // const nextLetter = availableLetters[Math.floor(Math.random() * availableLetters.length)];
 
-                // console.log('🎯 Next target letter:', nextLetter);
-                // setTargetLetter(nextLetter as string);
                 setAskedLetters(prev => [...prev, letter as string]);
 
-                // Generate new bubbles and ask for next letter immediately
-                // generateBubbles(nextLetter);
                 setHasBubblePopped(false);
             }
         } else {
-            // Wrong answer - encourage with talking animation
-
-            // Allow retry immediately after speech
             if(bubbles.length < 3) generateBubbles(targetLetter)
         }
         setHasBubblePopped(false);

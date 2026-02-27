@@ -1,4 +1,3 @@
-import BearViewer from "./components/AnimatedAvatar/Avatar";
 import { AvatarProvider } from "./components/AnimatedAvatar/AvatarContext";
 import { GameProvider } from "./components/Rooms/GameContext";
 import "./index.css";

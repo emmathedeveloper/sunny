@@ -1,5 +1,5 @@
 import React from 'react';
-import AnimationButton from './AnimationButton';
+import AnimationButton from '../src/components/AnimatedAvatar/AnimationButton';
 
 interface AnimationControlsProps {
   animationNames: string[];

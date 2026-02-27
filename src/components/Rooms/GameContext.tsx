@@ -128,8 +128,6 @@ export const GameProvider = ({ children }: { children?: ReactNode }) => {
         setCorrectStreak(0)
         setDifficulty(DIFFICULTY.MEDIUM)
         setCorrectCount(0)
-
-        console.log("Resetting for next room")
     }
 
     //Reset failure count whenever we have a new question

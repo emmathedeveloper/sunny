@@ -5,7 +5,7 @@ type UseGameAudioOptions = {
     winUrl: string;
     loseUrl: string;
     bgVolume?: number;
-    duckVolume?: number;   // recommended 0.3–0.4
+    duckVolume?: number;
     fadeDuration?: number;
     fadeInDuration?: number;
 };
